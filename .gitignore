@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Secrets / local config — 禁止提交任何密钥/token（见 design.md §24）
+.env
+*.local
+
+# Runtime data
+*.db
+*.sqlite3
+instance/
+uploads/
+exports/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
