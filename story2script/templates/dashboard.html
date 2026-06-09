@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Dashboard · Story2Script{% endblock %}
+{% block content %}
+<h1>Dashboard</h1>
+<p class="muted">真实运行数据（来自 SQLite，非伪指标）。</p>
+
+<section class="metrics big">
+  <div class="metric"><b>{{ stats.scripts }}</b><span>生成剧本</span></div>
+  <div class="metric"><b>{{ stats.scenes }}</b><span>场景总数</span></div>
+  <div class="metric"><b>{{ stats.characters }}</b><span>角色总数</span></div>
+  <div class="metric"><b>{{ stats.lines }}</b><span>台词总数</span></div>
+</section>
+
+<section class="metrics">
+  <div class="metric"><b>{{ '%.1f' % stats.avg_scenes }}</b><span>平均场景数</span></div>
+  <div class="metric"><b>{{ '%.1f' % stats.avg_lines }}</b><span>平均台词数</span></div>
+  <div class="metric"><b>{{ '%.1f' % stats.avg_seconds }}s</b><span>平均生成耗时</span></div>
+</section>
+
+<section>
+  <h2>埋点事件</h2>
+  {% if stats.events %}
+  <table class="grid">
+    <thead><tr><th>事件</th><th>次数</th></tr></thead>
+    <tbody>
+      {% for e in stats.events %}<tr><td>{{ e.name }}</td><td>{{ e.n }}</td></tr>{% endfor %}
+    </tbody>
+  </table>
+  {% else %}<p class="muted">暂无埋点事件。</p>{% endif %}
+</section>
+{% endblock %}

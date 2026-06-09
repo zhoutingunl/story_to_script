@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>把小说，变成可打磨的剧本初稿</h1>
+  <p class="sub">导入小说 → 章节解析 → 人物抽取 → 场景拆分 → 对白生成 → 导出 YAML 剧本，
+     并附人物关系图与质量报告。</p>
+</section>
+
+<div class="cards">
+  <form class="card" method="post" action="{{ url_for('generate') }}" enctype="multipart/form-data">
+    <h3>① 用示例小说生成</h3>
+    <p class="muted">明代桐城穿越短篇（9 章 / 2.7 万字）。离线即可瞬时生成，无需 VPN。</p>
+    <input type="hidden" name="use_sample" value="1">
+    <label class="inline">对白模式
+      <select name="mode">
+        <option value="conservative">保守（忠于原文）</option>
+        <option value="creative">创作增强</option>
+      </select>
+    </label>
+    <button type="submit" {% if not has_sample %}disabled{% endif %}>用示例小说生成 →</button>
+  </form>
+
+  <form class="card" method="post" action="{{ url_for('generate') }}" enctype="multipart/form-data">
+    <h3>② 上传你的小说</h3>
+    <p class="muted">支持 .txt / .md / .pdf（3 章以上）。当前 AI 后端：
+      <b>{{ cfg.ai_backend }}</b>{% if cfg.ai_backend == 'hermes' %}（需公司内网，生成约数分钟）{% endif %}。</p>
+    <input type="file" name="novel" accept=".txt,.md,.pdf">
+    <label class="inline">对白模式
+      <select name="mode">
+        <option value="conservative">保守（忠于原文）</option>
+        <option value="creative">创作增强</option>
+      </select>
+    </label>
+    <button type="submit">上传并生成 →</button>
+  </form>
+</div>
+
+<section>
+  <h2>已生成剧本</h2>
+  {% if scripts %}
+  <table class="grid">
+    <thead><tr><th>#</th><th>标题</th><th>模型</th><th>场景</th><th>角色</th><th>台词</th><th>耗时</th><th>时间</th><th></th></tr></thead>
+    <tbody>
+    {% for s in scripts %}
+      <tr>
+        <td>{{ s.id }}</td>
+        <td><a href="{{ url_for('script_view', script_id=s.id) }}">{{ s.title }}</a></td>
+        <td>{{ s.model }}</td>
+        <td>{{ s.scene_count }}</td>
+        <td>{{ s.char_count }}</td>
+        <td>{{ s.line_count }}</td>
+        <td>{{ '%.1f' % s.gen_seconds }}s</td>
+        <td class="muted">{{ s.created_at }}</td>
+        <td><a class="btn-sm" href="{{ url_for('script_yaml', script_id=s.id) }}">YAML</a></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <p class="muted">还没有剧本，先用上面的方式生成一个吧。</p>
+  {% endif %}
+</section>
+{% endblock %}

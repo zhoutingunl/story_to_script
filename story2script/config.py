@@ -39,7 +39,16 @@ class Config:
 
     @classmethod
     def load(cls) -> "Config":
-        return cls()
+        """每次调用都重新读取环境变量（字段默认值只在类定义时求值一次，不可依赖）。"""
+        return cls(
+            ai_backend=_env("STORY2SCRIPT_AI_BACKEND", "hermes"),
+            hermes_base=_env("HERMES_BASE", "http://10.210.32.30:8787").rstrip("/"),
+            model=_env("STORY2SCRIPT_MODEL", "MiniMax-M3"),
+            ai_timeout=int(_env("STORY2SCRIPT_AI_TIMEOUT", "300")),
+            db_path=_env("STORY2SCRIPT_DB", str(ROOT / "story2script.db")),
+            flask_secret=_env("FLASK_SECRET", "dev-only-change-me"),
+            fixtures_dir=FIXTURES_DIR,
+        )
 
 
 def get_config() -> Config:
