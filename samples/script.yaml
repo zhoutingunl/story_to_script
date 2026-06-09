@@ -446,7 +446,8 @@ scenes:
     text: 周掌柜长嚎一声，跌坐在少年尸身旁，与那家仆一老一少，于街心放声大哭。
   - kind: transition
     text: 切至：县衙方向。
-  quality_flags: []
+  quality_flags:
+  - too_long
 - id: s4
   index: 4
   heading:
@@ -589,7 +590,8 @@ scenes:
     text: 家仆扑上来拉住庞雨，撞开围观人墙。两人爆发小宇宙，一溜烟消失在大街尽头。
   - kind: transition
     text: 切至——
-  quality_flags: []
+  quality_flags:
+  - too_long
 - id: s6
   index: 6
   heading:
@@ -879,7 +881,8 @@ scenes:
     text: 庞雨一把扔下木条，起身就往厅堂方向走。
   - kind: transition
     text: 切至：前厅。
-  quality_flags: []
+  quality_flags:
+  - too_long
 - id: s8
   index: 8
   heading:
@@ -1431,7 +1434,8 @@ scenes:
     parenthetical: 拱手
   - kind: transition
     text: 切至：庞雨推门而出，脚步不停，巷口日光晃眼。
-  quality_flags: []
+  quality_flags:
+  - too_long
 - id: s14
   index: 14
   heading:
@@ -1615,7 +1619,8 @@ scenes:
     text: 庞雨暗暗松了口气，老妈拭泪，老爹神情郑重，天井里药香浮动，一家三口各怀心事。
   - kind: transition
     text: 切至：庞雨独坐屋中，回味方才的「神迹」。
-  quality_flags: []
+  quality_flags:
+  - too_long
 - id: s16
   index: 16
   heading:
@@ -1881,7 +1886,8 @@ scenes:
     parenthetical: 嘟囔
   - kind: transition
     text: 淡出。
-  quality_flags: []
+  quality_flags:
+  - too_long
 - id: s19
   index: 19
   heading:
@@ -2370,7 +2376,8 @@ scenes:
     text: 庞雨看到她大哭,心头又一阵开心,连忙拍拍脑袋,赶紧跟着焦国柞往牢里走。心中暗骂:挨了一棒咋有这爱好了?我他妈是变态了?
   - kind: transition
     text: '切至: 牢内'
-  quality_flags: []
+  quality_flags:
+  - too_long
 - id: s25
   index: 25
   heading:
@@ -2415,7 +2422,8 @@ scenes:
   - kind: action
     text: |-
       庞雨不动声色，但眼神在那些单间与空房之间来回一掠，心里已然明白了七八分：给过银子的犯人，牢子就给单间；没给的，便被塞进那五六人挤一间的木栅栏里，蚊叮虫咬，连躺都没法躺。
-  quality_flags: []
+  quality_flags:
+  - low_dialogue
 - id: s26
   index: 26
   heading:
@@ -2556,7 +2564,8 @@ scenes:
     text: 嚎叫声在黑狱中回荡。
   - kind: transition
     text: 切至
-  quality_flags: []
+  quality_flags:
+  - too_long
 - id: s27
   index: 27
   heading:
@@ -3310,5 +3319,38 @@ quality_report:
   expanded: 32
   dialogue_density: 0.527
   expanded_ratio: 0.102
-  warnings: []
+  warnings:
+  - scene: s3
+    type: too_long
+    detail: 736 字 / 27 个元素，建议拆分。
+  - scene: s5
+    type: too_long
+    detail: 697 字 / 27 个元素，建议拆分。
+  - scene: s7
+    type: too_long
+    detail: 1381 字 / 47 个元素，建议拆分。
+  - scene: s13
+    type: too_long
+    detail: 1206 字 / 29 个元素，建议拆分。
+  - scene: s15
+    type: too_long
+    detail: 1126 字 / 32 个元素，建议拆分。
+  - scene: s18
+    type: too_long
+    detail: 1196 字 / 40 个元素，建议拆分。
+  - scene: s24
+    type: too_long
+    detail: 1460 字 / 45 个元素，建议拆分。
+  - scene: s25
+    type: low_dialogue
+    detail: 动作 8 块但台词仅 1 句。
+  - scene: s26
+    type: too_long
+    detail: 1242 字 / 35 个元素，建议拆分。
+  - scene: '-'
+    type: character_imbalance
+    detail: 角色出场失衡(Gini=0.692)，主角戏份高度集中。
   unresolved_speakers: 112
+  avg_scene_length: 646.8
+  character_balance_gini: 0.692
+  scene_coverage: 1.0

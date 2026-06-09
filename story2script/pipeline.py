@@ -11,6 +11,7 @@ from .ai_service import AIService
 from .character_extractor import extract_characters
 from .dialogue_generator import generate_dialogue
 from .parser import Novel, parse_novel, parse_novel_text
+from .quality_checker import check_quality
 from .scene_planner import plan_scenes
 from .script_generator import build_script
 
@@ -30,11 +31,14 @@ def run_pipeline(novel: Novel, ai: AIService, *, model: str | None = None,
     scenes = plan_scenes(novel, ai, granularity=granularity)
     by_index = {c.index: c for c in novel.chapters}
     elements = generate_dialogue(scenes, by_index, ai, mode=dialogue_mode)
-    return build_script(
+    script = build_script(
         novel, character_set, scenes, elements,
         model=model, dialogue_mode=dialogue_mode,
         generated_at=generated_at, logline=logline,
     )
+    paras_per_chapter = {c.index: len(c.paragraphs) for c in novel.chapters}
+    check_quality(script, paras_per_chapter)   # 填充 quality_flags 与 warnings
+    return script
 
 
 def run_from_path(path: str, ai: AIService, **kwargs) -> dict:
