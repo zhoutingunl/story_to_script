@@ -1,0 +1,3314 @@
+schema_version: 1
+meta:
+  title: story
+  source: story.txt
+  logline: 现代灵魂魂穿明末桐城无赖少年，凭机变在崇祯年间立足。
+  generated_at: '2026-06-09T12:00:00'
+  generator: story2script 0.1.0
+  model: MiniMax-M3
+  dialogue_mode: conservative
+characters:
+- id: c1
+  name: 庞雨
+  aka:
+  - 庞家傻儿
+  - 庞傻子
+  - 庞哥儿
+  - 庞二傻
+  - 庞少爷
+  - 二弟
+  - 二哥
+  role: protagonist
+  profile: 原是现代人，被周掌柜一棒打死穿越到崇祯七年同名皂隶身上，借”被打傻”之机改头换面，打算用现代头脑在大明立足。
+  goal: 帮老庞家度过药库塌毁的难关，赚钱、立足、避过明末乱世。
+  arc: 从现代失意青年（电梯出事）转生为桐城小皂隶，由被街坊嫌弃的纨绔逐步展露精明狠辣，成长为能操盘官司、算计刘家的当家人。
+  appearances: 273
+  importance: 1.0
+- id: c7
+  name: 刘婶
+  aka:
+  - 刘家婶子
+  - 刘家妹子
+  role: supporting
+  profile: 庞家街坊，与庞雨有婚约的刘家女主人，精明算计的市井妇人。
+  goal: 借庞家落魄把女儿嫁得更好，趁机退婚止损。
+  arc: 气势汹汹上门退婚、被庞雨妈骂出门，掏了二十一两”违约金”才脱身，回头才怀疑庞雨不傻。
+  appearances: 67
+  importance: 0.25
+- id: c5
+  name: 周掌柜
+  aka:
+  - 周拥田
+  - 周家掌柜
+  role: supporting
+  profile: 陕西籍客居桐城的纸铺掌柜，膀大腰圆、脾气暴躁，因一棒打死旧庞雨而获罪。
+  goal: 早日脱离牢狱之灾，倾家荡产也要自保。
+  arc: 由街上凶狠打人的汉子，经匣床一夜折磨后彻底服软，哭求撤状回家。
+  appearances: 63
+  importance: 0.24
+- id: c2
+  name: 庞丁
+  aka:
+  - 庞家帮佣
+  role: supporting
+  profile: 庞家帮佣，约十五六岁，脸上有青春痘，对庞雨忠心耿耿，常被少爷打骂。
+  goal: 伺候好庞少爷，保住自己在庞家的饭碗。
+  arc: 从对”旧庞雨”逆来顺受，到逐渐对新少爷的精明刮目相看，主动配合其谋划。
+  appearances: 43
+  importance: 0.16
+- id: c6
+  name: 周月如
+  aka:
+  - 周家闺女
+  - 周小娘子
+  - 仙女
+  role: supporting
+  profile: 周掌柜之女，白衣长裙的秀丽女子，性情刚烈、口直心快，右耳根有黑胎记。
+  goal: 救父亲出狱，护住家产，不被庞雨欺负。
+  arc: 从追打庞雨的女汉子，到被庞雨退婚拿捏、在调解中气得哭骂却无力翻盘，最后被迫接受赔偿谈判。
+  appearances: 38
+  importance: 0.16
+- id: c9
+  name: 焦国柞
+  aka:
+  - 焦大哥
+  role: supporting
+  profile: 庞雨的结拜大哥，衙门皂隶，年长庞雨三岁，臭味相投的狠角色。
+  goal: 借官司帮兄弟敲周家一笔，自己也分杯羹。
+  arc: 从替庞雨张罗告状，到在调解、牢中全程配合恐吓周掌柜。
+  appearances: 29
+  importance: 0.12
+- id: c10
+  name: 何仙崖
+  aka:
+  - 何相公
+  - 老三
+  role: supporting
+  profile: 青衿读书人，考不上秀才也捐不起贡生的帮闲讼棍，按地位排老三，擅长引经据典构陷对手。
+  goal: 代理庞雨官司，榨出最大赔偿。
+  arc: 从幕后出主意，到申明亭当庭口吐莲花，搬出大明律把周掌柜逼到认罪。
+  appearances: 33
+  importance: 0.12
+- id: c11
+  name: 吴老
+  aka:
+  - 里老
+  - 清风市里老
+  role: minor
+  profile: 桐城清风市里老，花白胡须，在申明亭主持民事调解。
+  goal: 息事宁人，促成双方了结。
+  arc: 保持中立姿态，偏向庞雨一方调停，最终帮庞雨拿到赔偿。
+  appearances: 27
+  importance: 0.1
+- id: c20
+  name: 围观群众
+  aka:
+  - 街坊
+  - 大妈
+  - 老人
+  role: group
+  profile: 桐城东西大街上的普通百姓与小贩，爱看热闹。
+  goal: 看乐子。
+  arc: 从围观庞雨闹剧，到被”诈尸”吓散，又在调解中作为背景板存在。
+  appearances: 21
+  importance: 0.08
+- id: c3
+  name: 老庞头
+  aka:
+  - 庞雨老爹
+  - 庞家掌柜
+  - 老爹
+  - 便宜老爹
+  role: supporting
+  profile: 庞家生药铺掌柜，三代单传的老实商人，穿着道袍样直身，方脸有须，重信义。
+  goal: 守住老庞家药铺的信誉与家业，让儿子开窍光耀门楣。
+  arc: 起初忧心药库垮塌、儿子又傻；发现庞雨开窍会写字后大喜，从焦虑转为看到希望。
+  appearances: 19
+  importance: 0.07
+- id: c4
+  name: 庞雨老娘
+  aka:
+  - 庞家老妈
+  - 便宜老娘
+  - 庞妈
+  role: supporting
+  profile: 庞家主母，干瘦朴实的劳动妇女，既当妈又当药铺长工，泼辣护家。
+  goal: 守住儿子、保住家业，对抗刘家退婚。
+  arc: 从嚎哭老天不开眼，到儿子”开窍”后激动跪谢祖宗，自信大增。
+  appearances: 7
+  importance: 0.04
+- id: c12
+  name: 老罗
+  aka:
+  - 罗姓牢子
+  role: minor
+  profile: 桐城南监的牢子，惯用匣床折磨犯人，曾在周掌柜脸上方压一晚。
+  goal: 替皂隶兄弟”招待”犯人，捞点外快。
+  arc: 出场即配合焦国柞、庞雨用匣床逼服周掌柜，默契分银。
+  appearances: 7
+  importance: 0.04
+- id: c8
+  name: 刘家仙女
+  aka:
+  - 刘家闺女
+  - 刘婶的闺女
+  role: supporting
+  profile: 刘婶之女、刘家仙女，眉如柳叶眼若点漆的俏丽少女，泼辣而孝顺。
+  goal: 嫁给庞雨，逼母亲不退婚。
+  arc: 河边揪耳朵逼庞雨不许退婚，得知银子被退回后要求他上门求亲。
+  appearances: 3
+  importance: 0.03
+- id: c14
+  name: 野牢子
+  aka:
+  - 帮闲小牢子
+  role: minor
+  profile: 南监门口的帮闲，蹲在周家闺女面前要一两银子一顿饭。
+  goal: 借”牢里有吃的”勒索周家。
+  arc: 先威胁、后定高价，被庞雨一句”一天吃一顿”打乱套路。
+  appearances: 3
+  importance: 0.02
+- id: c18
+  name: 杨大人
+  aka:
+  - 代理知县
+  - 宿松知县
+  role: minor
+  profile: 宿松知县，代理桐城县事，主要精力放在钱粮上。
+  goal: 无。
+  arc: 被焦国柞拿来做恐吓周家的筹码。
+  appearances: 3
+  importance: 0.02
+- id: c13
+  name: 南监牢子
+  aka:
+  - 嘲弄庞雨的牢子
+  role: minor
+  profile: 桐城县衙南监守门牢子，斜眼歪眉，借送饭敲诈周家闺女。
+  goal: 借职权敲诈犯人家属。
+  arc: 踢翻周月如的饭篮，开口嘲弄”庞二傻”，后被焦国柞打点放行。
+  appearances: 0
+  importance: 0.01
+- id: c15
+  name: 庞家婆子
+  aka:
+  - 帮佣婆子
+  role: minor
+  profile: 庞家帮佣婆子，在退婚骂战中助攻庞雨老妈。
+  goal: 帮主家打赢嘴仗。
+  arc: 加入战团形成双鬼拍门之势，助庞家逼退刘婶。
+  appearances: 0
+  importance: 0.01
+- id: c16
+  name: 光时亨
+  aka: []
+  role: minor
+  profile: 南直隶安庆府桐城人，崇祯七年会试三甲赐同进士出身。
+  goal: 无明确动机，仅作为告示上被庞雨认字读到的人物出现。
+  arc: 无。
+  appearances: 2
+  importance: 0.01
+- id: c17
+  name: 辜知县
+  aka:
+  - 前任知县
+  role: minor
+  profile: 桐城县原任知县，已高升他处。
+  goal: 无。
+  arc: 被焦国柞顺口提及，已离任。
+  appearances: 1
+  importance: 0.01
+- id: c19
+  name: 刘婶舅叔
+  aka:
+  - 刘家亲戚
+  role: minor
+  profile: 刘婶的亲戚，在安庆府当司吏。
+  goal: 无。
+  arc: 被刘婶口头抬出来压庞家，后文未再出现。
+  appearances: 0
+  importance: 0.01
+scenes:
+- id: s1
+  index: 1
+  heading:
+    int_ext: EXT
+    location: 桐城东西大街
+    time: 日
+  summary: 庞家少年提死鼠沿街游荡，百姓纷纷侧目议论。
+  source:
+    chapter: 1
+    span:
+    - 0
+    - 7
+  conflict: 少年以无赖行径扰乱市井，招来众人嫌恶与窃议，建立其「喇唬青皮」形象。
+  characters:
+  - 庞家少年
+  - 家仆
+  - 街上百姓
+  elements:
+  - kind: action
+    text: 桐城东西大街，日。七月初二的暑气里，街市热闘：贩夫走卒、僧道行人穿梭于食铺、商铺、茶肆之间。
+  - kind: action
+    text: 一管白皙修长的手指捏着死鼠尾巴，将那脏物悬在半空，死鼠随着主人的步伐在少年身后摇来晃去。
+  - kind: action
+    text: 庞家少年，青袍、瓜拉帽、方头鞋，腰左别折扇，十七八岁，眉目俊俏，嘴角却挂着几分无赖的浪荡笑意，沿街而行。
+  - kind: action
+    text: 家仆紧随其后，十五六岁，一脸青春痘，神色又惧又无奈。
+  - kind: action
+    text: 街边百姓见此情景纷纷侧身让道，掩鼻侧目，交头接耳。
+  - kind: action
+    text: 少年对众人嫌弃的目光视若无睹，贼兮兮地左顾右盼，瞟着街上来往的年轻女子。
+  - kind: dialogue
+    character: 街上百姓
+    line: 庞家那个傻儿又出来了，不知谁又要遭殃。
+    mode: extracted
+    parenthetical: 压低嗓子，对旁人嘀咕
+  - kind: dialogue
+    character: 街上百姓
+    line: 老庞家掌柜不知道做了啥孽哟，生这么个儿子，脑子傻就不说了，还除了好事不做，其他啥都做。
+    mode: extracted
+    parenthetical: 摇头叹息
+  - kind: dialogue
+    character: 街上百姓
+    line: 谁说不是，仗着当个皂隶可害不少人，上次啊……哎，你看，你快看！
+    mode: extracted
+    parenthetical: 正说着，突然一扯身旁同伴的袖子
+  quality_flags: []
+- id: s2
+  index: 2
+  heading:
+    int_ext: EXT
+    location: 桐城东西大街纸铺外
+    time: 日
+  summary: 庞家少年用死鼠砸纸铺女子臀部，假装见义勇为上前揩油。
+  source:
+    chapter: 1
+    span:
+    - 8
+    - 18
+  conflict: 少年以恶作剧挑衅陌生女子，色心与伪装义勇的张力爆发。
+  characters:
+  - 庞家少年
+  - 家仆
+  - 周家女子
+  - 围观百姓
+  elements:
+  - kind: action
+    text: |-
+      日光下的桐城东西大街，人来人往。一家纸铺外，白衣长裙的周家女子正低头整理铺面，背景中一个身材颀长、衣着讲究的庞家少年脚步渐快，悄悄绕到女子身后。
+  - kind: action
+    text: 少年右手猛地一挥，一只毛发狰狞的死老鼠划过一道黑乎乎的抛物线，啪一声砸在女子臀部。
+  - kind: dialogue
+    character: 周家女子
+    line: 啊！
+    mode: expanded
+    parenthetical: 本能地惊叫
+  - kind: action
+    text: 女子臀部本能一挺，尖叫着转过身，又踉跄后退两步。
+  - kind: action
+    text: 少年旋即冲到女子与老鼠之间，挡住她的去路。
+  - kind: dialogue
+    character: 庞家少年
+    line: 有老鼠！
+    mode: expanded
+    parenthetical: 大喝
+  - kind: action
+    text: 女子惊魂未定地低头看地，果然见一只死鼠伏在青石板上，当即吓得花容失色，缩起肩膀。
+  - kind: action
+    text: 庞家少年一面上前一只脚对着死老鼠猛踩，一面两手一张作护住女子的姿态，嘴中似在安慰，身子却越凑越近。
+  - kind: action
+    text: 少年贴着女子身前身后挨来挨去，一只手悄然探向女子腰臀；女子慌乱中只顾躲闪，未察觉那只咸猪手。
+  - kind: action
+    text: 青石板上死鼠被踩得扁平，挤出几缕黑血，在石板缝隙间涂抹开来。
+  - kind: action
+    text: 一名家仆从人群边上凑过头去，假装看热闹。
+  - kind: action
+    text: 听得这边动静，街两边百姓三三两两围拢过来，里三层外三层地看这场热闹。
+  - kind: action
+    text: 周家女子被蹭得退开几步，稍稍定了定神，抬眼看向面前这位挺身而出的少年，神色稍缓，似要开口道谢。
+  - kind: dialogue
+    character: 周家女子
+    line: 多……多谢这位公子出手相护。
+    mode: expanded
+    parenthetical: 微微喘息，仍带余惊
+  quality_flags: []
+- id: s3
+  index: 3
+  heading:
+    int_ext: EXT
+    location: 桐城东西大街纸铺外
+    time: 日
+  summary: 纸铺掌柜冲出持挑棒追打少年，少年被击中头顶扑地不起，围观者以为闹出人命。
+  source:
+    chapter: 1
+    span:
+    - 19
+    - 40
+  conflict: 恶作剧反噬，少年挨打「身亡」引发命案危机，百姓、掌柜、家仆陷入慌乱与推诿。
+  characters:
+  - 庞家少年
+  - 家仆
+  - 周家女子
+  - c5
+  - 围观百姓
+  elements:
+  - kind: action
+    text: 桐城东西大街，纸铺外。日光斜照，街市尚算热闹。少年对退开的女子拱手致意，神色从容。
+  - kind: dialogue
+    character: 庞家少年
+    line: 姑娘莫怕，这老鼠颇有怪力，我追了它半条街，好在没让它伤到姑娘……
+    mode: extracted
+    parenthetical: 彬彬有礼
+  - kind: action
+    text: 话音未落，纸铺内猛然冲出一大汉，挥舞挑棒朝少年兜头打来。
+  - kind: dialogue
+    character: c5
+    line: 嗨，嗨，你干嘛！好你个青皮，老子在里面都看到了，分明你扔的老鼠，敢非礼老子女儿，打死你！
+    mode: extracted
+    parenthetical: 挥舞挑棒边打边吼
+  - kind: dialogue
+    character: 庞家少年
+    line: 你敢跟老子动粗，老子可是皂班的，啊，饶命啊……你这狗才，你等着，别打啦！
+    mode: extracted
+    parenthetical: 边骂边挡
+  - kind: action
+    text: 围观百姓轰然散开至棍棒之外，见是平日招人厌的庞家少年挨打，反有人拍手叫好。大汉越发来劲，挑棒虎虎生风。
+  - kind: action
+    text: 家仆在外围喝骂连连却不敢近身。少年手脚格挡，连挨数下，痛得龇牙咧嘴，转身欲逃。
+  - kind: action
+    text: 「梆」一声闷响，挑棒正中少年头顶。围观人群中爆发尖叫。
+  - kind: action
+    text: 少年身体僵直，停顿片刻，猛地扑倒地面朝下趴伏在地，一动不动。
+  - kind: action
+    text: 大汉愣在人群空地中央，手中挑棒僵住。
+  - kind: action
+    text: 家仆扑上前，费力将少年翻过身来。少年头顶鼻中皆有血迹，家仆哭喊两声，少年毫无反应。
+  - kind: dialogue
+    character: 家仆
+    line: 少爷死啦！打死人啦！
+    mode: extracted
+    parenthetical: 颤抖着伸手探少年鼻息
+  - kind: action
+    text: 「哐当」一声，大汉手中挑棒跌落，人一屁股坐倒在地。那女子刚走近，也呆在当场。
+  - kind: action
+    text: 一旁老者俯身探鼻息，猛地惊叫抬头。
+  - kind: dialogue
+    character: 围观老人
+    line: 真没气了，这怎生是好。
+    mode: extracted
+    parenthetical: 惊惧
+  - kind: action
+    text: 围观百姓越聚越紧，七嘴八舌乱作一团。
+  - kind: dialogue
+    character: 围观百姓
+    line: 哎呀，出人命啦，周家掌柜的，你……哎，虽说庞家小子是个喇唬青皮，你也不能往死里打啊。
+    mode: extracted
+    parenthetical: 焦急嚷嚷
+  - kind: dialogue
+    character: 围观百姓
+    line: 快去报官！
+    mode: expanded
+    parenthetical: 催促
+  - kind: dialogue
+    character: 围观百姓
+    line: 这人谁家的，找人去跟人家说啊，你们说这事，谁认识的，去，你快去呀。
+    mode: extracted
+    parenthetical: 推搡旁人
+  - kind: dialogue
+    character: 围观百姓
+    line: 他可是县衙皂隶呢！
+    mode: extracted
+    parenthetical: 低声
+  - kind: dialogue
+    character: 围观百姓
+    line: 啊！县衙的人……
+    mode: extracted
+    parenthetical: 惊呼
+  - kind: dialogue
+    character: c5
+    line: 这，我没想……你们都叫打呀，我哪知道啊。
+    mode: extracted
+    parenthetical: 结巴慌张
+  - kind: action
+    text: 方才被老鼠砸了屁股的女子缓过神来，走近父亲身旁，反倒轻声安慰。
+  - kind: dialogue
+    character: 周家女子
+    line: 爹别怕，这事因女儿而起，总是他无理在先。就万一说是要抵命，也是女儿去。
+    mode: extracted
+    parenthetical: 轻声镇定
+  - kind: dialogue
+    character: c5
+    line: 你又没打，也抵不了啊，完了完了！好容易才在这里安生过日子啊！
+    mode: extracted
+    parenthetical: 呆滞
+  - kind: action
+    text: 周掌柜长嚎一声，跌坐在少年尸身旁，与那家仆一老一少，于街心放声大哭。
+  - kind: transition
+    text: 切至：县衙方向。
+  quality_flags: []
+- id: s4
+  index: 4
+  heading:
+    int_ext: EXT
+    location: 桐城东西大街纸铺外
+    time: 日
+  summary: 庞家少年突然「诈尸」坐起，自称是电梯摔落的现代人，怒问是谁把他弄到「横店」。
+  source:
+    chapter: 1
+    span:
+    - 41
+    - 45
+  conflict: 现代灵魂借尸还魂，荒诞穿越与古代街景的认知错位形成全章最大的戏剧反转。
+  characters:
+  - 庞家少年
+  - 家仆
+  - c5
+  - 围观百姓
+  elements:
+  - kind: action
+    text: 桐城东西大街纸铺外，日。哭声与七嘴八舌的议论中，地上躺着的庞家少年突然腰一挺，直直坐起。
+  - kind: action
+    text: 众人惊呼「诈尸」，四散奔逃。周掌柜与家仆也跳起跑开，街上一阵鸡飞狗跳，货摊箩筐倒了一地。
+  - kind: action
+    text: 庞家少年呲牙咧嘴地摸着脑袋，皱眉忍痛，睁眼茫然四顾——街巷古旧，远处有人远远望着他，不敢靠近。
+  - kind: dialogue
+    character: 庞家少年
+    line: 啥地方，电梯还摔得真他妈远啊。
+    mode: extracted
+    parenthetical: 喃喃自语，仍带痛意
+  - kind: action
+    text: 庞家少年不顾头痛，挣扎站起，环视众人，怒气上涌。
+  - kind: dialogue
+    character: 庞家少年
+    line: 谁！谁他妈把老子弄到横店来了？
+    mode: extracted
+    parenthetical: 怒吼
+  quality_flags: []
+- id: s5
+  index: 5
+  heading:
+    int_ext: EXT
+    location: 桐城东西大街
+    time: 日
+  summary: 庞雨血流满面在街头咆哮，误以为是横店片场，与周家女子因死老鼠发生冲突后被家仆救出。
+  source:
+    chapter: 2
+    span:
+    - 0
+    - 25
+  conflict: 庞雨拒绝接受穿越现实，怒怼围观路人；周家女子认定他用死老鼠砸自己、占便宜，持挑棍追打，庞雨仓皇逃跑。
+  characters:
+  - c1
+  - 周家女子
+  - c5
+  - 庞家家仆
+  - 围观路人
+  elements:
+  - kind: action
+    text: 桐城东西大街，日。庞雨血流满面站在街心，对着四周咆哮。满街人远远围观，几个大妈交头接耳。
+  - kind: dialogue
+    character: c1
+    line: 谁还给老子换了这个衣服？你们以为我是群众演员？知道我一天赚多少钱吗！叫你们导演出来，老子到底怎么到横店的！
+    mode: extracted
+  - kind: action
+    text: 围观路人大妈窃窃私语，庞雨吼了约莫两分钟，无人回应。
+  - kind: dialogue
+    character: 围观路人
+    line: 这是魔怔了不是？那门口明明是个纸店，他非说是横店。
+    mode: extracted
+  - kind: dialogue
+    character: 围观路人
+    line: 打傻了，哪有店卖什么叫横的东西，还竖店呢。
+    mode: extracted
+  - kind: dialogue
+    character: 围观路人
+    line: 傻了好，叫他害人。
+    mode: extracted
+  - kind: action
+    text: |-
+      庞雨吼完，头晕，身体一晃，伸手捂住脑袋。突觉领子一紧，被人抓住后衣领；紧接着后颈一凉，一团毛茸茸的东西贴着背脊哧溜钻进了衣内。
+  - kind: dialogue
+    character: c1
+    line: 我擦！
+    mode: expanded
+  - kind: action
+    text: 庞雨吓得跳起，伸手在背后乱摸，抖衣抖不出；解开腰带跳了几下，终于把一团毛物抖落地上。
+  - kind: action
+    text: 低头一看，地上赫然是一只死老鼠。庞雨怒骂。
+  - kind: dialogue
+    character: c1
+    line: 谁他妈这么缺德，拿老鼠吓人！
+    mode: extracted
+  - kind: dialogue
+    character: 周家女子
+    line: 你还知道什么叫缺德呢！
+    mode: extracted
+  - kind: action
+    text: 庞雨抬眼：面前一个身量颇高的秀丽女子，白色长裙，素衣窄袖，右手还攥着几张纸——正是方才裹老鼠用的——满面通红，怒目而视。
+  - kind: action
+    text: 庞雨心头火起。
+  - kind: dialogue
+    character: c1
+    line: 老子又没招惹你！
+    mode: extracted
+  - kind: action
+    text: 女子叉腰。
+  - kind: dialogue
+    character: 周家女子
+    line: 还敢说没惹我？分明是你方才用老鼠砸我……占我便宜。
+    mode: extracted
+  - kind: action
+    text: 女子说不出口"屁股"二字，一时脸红语塞。
+  - kind: dialogue
+    character: c1
+    line: |-
+      我犯得着占你便宜？追爷的人多了，十八岁到三十多岁都有。你这个姿色只能算中等，化妆都不会化，想送我也不要。你就别癞蛤蟆想吃天鹅肉了。
+    mode: extracted
+  - kind: dialogue
+    character: c1
+    line: 还装得蛮像——你姿色是比群演好些，应该是个特邀，但也好不了多少。说，你陪副导演睡觉没？
+    mode: expanded
+  - kind: dialogue
+    character: 周家女子
+    line: 睡觉？你……
+    mode: expanded
+  - kind: action
+    text: 女子气得眉毛一竖，喘着气低头在地上翻找，捡起周掌柜方才丢下的挑棍，朝庞雨打来。
+  - kind: dialogue
+    character: c5
+    line: 闺女使不得！别再打了！
+    mode: extracted
+  - kind: action
+    text: 庞雨转身就跑，脑袋又痛又晕，跌跌撞撞跑不快，眼见女子就要追到。
+  - kind: dialogue
+    character: 庞家家仆
+    line: 少爷跑啊！
+    mode: expanded
+  - kind: action
+    text: 家仆扑上来拉住庞雨，撞开围观人墙。两人爆发小宇宙，一溜烟消失在大街尽头。
+  - kind: transition
+    text: 切至——
+  quality_flags: []
+- id: s6
+  index: 6
+  heading:
+    int_ext: INT
+    location: 庞家东厢房
+    time: 清晨
+  summary: 十日后，庞雨头缠棉布躺在东厢房中，听父母在外为药库塌方、银钱拮据而争吵，第一次接受了穿越到崇祯七年桐城的事实。
+  source:
+    chapter: 2
+    span:
+    - 26
+    - 53
+  conflict: 庞雨仍试图否认穿越，用自扇耳光验证梦境；庞家因暴雨毁药库、欠债濒临破产，父母在”救人药 vs 揭不开锅”之间痛苦抉择。
+  characters:
+  - c1
+  - 庞雨母亲
+  - 庞雨父亲
+  elements:
+  - kind: transition
+    text: 淡入
+  - kind: action
+    text: 内进东厢房。庞雨头上包着棉布，两眼无神地坐在床沿。阳光从瓦缝间零散洒落，照在石板上。
+  - kind: dialogue
+    character: c1
+    line: 这路跑的真远，各位投资人，各位仇人和朋友，你们可真是永远找不到我了。
+    mode: extracted
+    parenthetical: 喃喃自语，把面巾盖在脸上
+  - kind: action
+    text: 庞雨仰头看着头顶的房梁与瓦顶，闻着满屋药材味。院外传来女人嚎哭声。
+  - kind: dialogue
+    character: 庞雨母亲
+    line: 老庞家作了什么孽啊！雨儿被打了，药库也塌了，老天爷是不要我庞家活了啊！
+    mode: extracted
+    parenthetical: 在外嚎哭
+  - kind: action
+    text: 男人低声喝道。
+  - kind: dialogue
+    character: 庞雨父亲
+    line: |-
+      哭有什么用，真是女人见识。雨儿又不是让人打死了，只是头上入了风，这两日做了点疯事罢了，过几日或许就好了。药库塌是房梁腐了，遇着大风雨而已。
+    mode: extracted
+    parenthetical: 低声喝止
+  - kind: dialogue
+    character: 庞雨母亲
+    line: 家里就这点银子了，你要拿去作甚？
+    mode: extracted
+    parenthetical: 焦急
+  - kind: dialogue
+    character: 庞雨父亲
+    line: 那几家郎中的药，泡了水用不了，我得去进些新的来给人家。
+    mode: extracted
+    parenthetical: 答
+  - kind: dialogue
+    character: 庞雨母亲
+    line: 当家的，把药晒了给他们吧，这些银子拿走了，下半月就揭不开锅了。
+    mode: extracted
+    parenthetical: 几乎哀求
+  - kind: action
+    text: 老爹沉默片刻。
+  - kind: dialogue
+    character: 庞雨父亲
+    line: 庞家生药店做了三代了，咱们卖的是药，是给人治病的。泡过的药材给人家，好点是治不好病，大点就是人命。咱老庞家不能干亏心事。
+    mode: extracted
+    parenthetical: 语气低沉却笃定
+  - kind: action
+    text: 脚步声出门而去。天井中传来低低的呜咽。
+  - kind: action
+    text: 庞雨望着房梁，眼眶发涩。
+  - kind: dialogue
+    character: c1
+    line: 这是投了个什么胎……
+    mode: extracted
+    parenthetical: 内心独白式低语
+  - kind: action
+    text: 蒙太奇：十天里庞雨养伤、翻找记忆、出城乘牛车跑十里路，只见古时景象。
+  - kind: dialogue
+    character: c1
+    line: 横店就是想愚弄我，也不会投资做这么宏大的布景。
+    mode: extracted
+    parenthetical: 终于死心，对着空气
+  - kind: action
+    text: 庞雨缓缓闭眼，抬手往自己脸上狠狠扇了两记耳光。
+  - kind: dialogue
+    character: c1
+    line: 这都什么跟什么，为啥自己会在这么个奇怪的地方。哪怕面对那群愤怒的投资人，也比这里好。
+    mode: expanded
+    parenthetical: 睁开眼后近乎崩溃
+  - kind: action
+    text: 他小心翼翼撑开眼皮，面前多了一张脸——庞丁正呆呆望着他。
+  - kind: transition
+    text: 切至
+  quality_flags: []
+- id: s7
+  index: 7
+  heading:
+    int_ext: INT
+    location: 庞家东厢房
+    time: 清晨（连续）
+  summary: 庞雨借家法戏弄帮佣庞丁，搜刮三钱银子后听闻母亲在厅中与刘家争吵退婚之事，决定前去看热闹。
+  source:
+    chapter: 2
+    span:
+    - 54
+    - 95
+  conflict: 庞雨在主仆打闹中体验古代生存的荒诞与无力；药铺垮塌、刘家退婚的连环噩耗传来，庞家生存危机加剧。
+  characters:
+  - c1
+  - c2
+  - 庞雨母亲
+  - 刘家人（未见其人，厅中争吵声）
+  elements:
+  - kind: action
+    text: 东厢房，清晨。庞雨歪在躺椅上，脸上盖着面巾。庞丁捧着一根两指粗的木棍进门，噗通跪下。
+  - kind: dialogue
+    character: c2
+    line: 少爷，老爷说今天还要家法，照您说打多少就多少。
+    mode: extracted
+    parenthetical: 双手捧棍，跪得结结实实
+  - kind: action
+    text: 庞雨扯开面巾，打量庞丁，嘴角微微翘起，把脚搁到脚凳上。
+  - kind: dialogue
+    character: c1
+    line: 打你不是目的，只是手段。
+    mode: extracted
+    parenthetical: 翘着脚，语调不紧不慢
+  - kind: dialogue
+    character: c1
+    line: 目的是什么，是得让你知道错在哪里，以后不能再犯。否则我打你干什么，难道我是喜欢打人的人吗？
+    mode: extracted
+    parenthetical: 数落人的快感写满脸上
+  - kind: dialogue
+    character: c2
+    line: 您是。
+    mode: expanded
+    parenthetical: 低头小声
+  - kind: action
+    text: 庞雨坐起，抓过木条作势要打，庞丁连忙缩脖子求饶。
+  - kind: dialogue
+    character: c2
+    line: 我说少爷喜欢打外边的人，不喜欢我。
+    mode: extracted
+    parenthetical: 赶紧赔笑
+  - kind: action
+    text: 庞雨揉揉额头，还有些晕沉，眼前闪过那日周家父女凶悍的样子。
+  - kind: dialogue
+    character: c1
+    line: 那你说，知道错在哪里了没有？
+    mode: extracted
+    parenthetical: 用木条点了点庞丁
+  - kind: dialogue
+    character: c2
+    line: 没帮少爷挡那棍子，让少爷被人打了。
+    mode: extracted
+    parenthetical: 垂头丧气
+  - kind: dialogue
+    character: c1
+    line: 哎，以后你要记得，再遇到什么事，自己先顶着，让领……让少爷我先走。
+    mode: extracted
+    parenthetical: 木条轻敲椅沿
+  - kind: dialogue
+    character: c1
+    line: |-
+      你就算受个什么伤啊病的，有少爷我给你做主不是。你看这次，要是少爷我真被打死了，老爷一准就不要你，还不得把你赶出去，你说你又上哪里讨生活去，落个你也不好我也不好，对不对。
+    mode: extracted
+    parenthetical: 循循善诱
+  - kind: dialogue
+    character: c1
+    line: 现在你也认识到错误了，能有这个基本认识，就说明你的本质不坏，还是可以改造滴。以后改正了缺点就还是好同志嘛。
+    mode: extracted
+    parenthetical: 语重心长
+  - kind: action
+    text: 庞雨训完人，举起木条对准庞丁脑袋敲下去。
+  - kind: action
+    text: 庞丁嘶地吸一口气，闭眼等挨打，木条却在头顶轻轻一碰，又收了回去，半响没有动静。
+  - kind: action
+    text: 庞丁睁开一只眼偷看，只见庞雨已收起木条，又躺回椅子上。
+  - kind: dialogue
+    character: c2
+    line: 少爷你还打不打？
+    mode: extracted
+    parenthetical: 试探着
+  - kind: dialogue
+    character: c1
+    line: 不打了，你起来吧。
+    mode: extracted
+    parenthetical: 懒洋洋地摆摆手
+  - kind: action
+    text: 庞丁惊疑不定地站起，看少爷确实没动，这才松了口气。
+  - kind: action
+    text: 庞雨无精打采地躺在椅上，想着老庞家药库塌了的境况，自言自语。
+  - kind: dialogue
+    character: c1
+    line: 崇祯年间？他妈好像没好事啊，崇祯到底有多少年来着？
+    mode: extracted
+    parenthetical: 揉着额头
+  - kind: dialogue
+    character: c2
+    line: 少爷，这话可不敢乱说，你这问的可是皇上何时归天，死罪啊。
+    mode: extracted
+    parenthetical: 赶紧凑近压低声音
+  - kind: dialogue
+    character: c1
+    line: 死罪个屁，老子不怕那个。少爷现在怕的，是对这古代生活不太懂，日后到底做啥事业好呢。
+    mode: extracted
+    parenthetical: 不屑地哼一声
+  - kind: dialogue
+    character: c2
+    line: 少爷你又说胡话了。可要说做啥事嘛，那还用想么，最好明白了，赚银子呗。
+    mode: extracted
+    parenthetical: 咳咳清嗓
+  - kind: dialogue
+    character: c1
+    line: 赚银子还用你说，启动资金呢……
+    mode: extracted
+    parenthetical: 顺嘴接话
+  - kind: action
+    text: 庞雨突然住口，对着庞丁脑袋乱打两下。
+  - kind: dialogue
+    character: c1
+    line: |-
+      狗日的不准说银子钱啥的。钱有什么用，人生的意义在于钱的多少吗？关键在于做一个好人，老子这辈子要作好人，你小子别把我往邪路上带。
+    mode: extracted
+    parenthetical: 义正词严
+  - kind: dialogue
+    character: c2
+    line: 谁说赚银子都不是好人。咱家药铺塌了，有银子就能救了药铺的生意，谁给咱家银子，谁就是好人。
+    mode: extracted
+    parenthetical: 嘟哝着
+  - kind: action
+    text: 庞雨愣了一下，无从反驳。
+  - kind: dialogue
+    character: c1
+    line: |-
+      那好，我认为你说得有道理。少爷就先从你身上赚银子，把你银子拿来，少爷我身上可不能少了钱，嘴都吃淡了，先拿点钱来改善一下伙食……
+    mode: extracted
+    parenthetical: 点点头
+  - kind: action
+    text: 庞雨一边说一边伸手去搜庞丁身上。庞丁见势不妙转身就逃，刚抬脚就被什么东西在脚下一绊，一个狗吃屎扑倒在地。
+  - kind: action
+    text: 庞雨收回勾人的腿，敏捷地扑上去，用上身压在庞丁背脊上，双脚脚尖撑地控制重心。
+  - kind: action
+    text: 庞丁撑着手臂死命挣扎，庞雨像壁虎一样贴在他背上，几番角力后，庞丁耗尽体力，被死死压住。
+  - kind: action
+    text: 庞雨纵身骑在庞丁背上，一边搜身一边骂。
+  - kind: dialogue
+    character: c1
+    line: 老子开口的时候早有准备，你以为说到钱就只有你想跑，跑路的人我见得多了。
+    mode: extracted
+    parenthetical: 得意
+  - kind: dialogue
+    character: c2
+    line: 求少爷不要啊，我好不容易才又存了一点，你，你这用的啥功夫，没看你练过啊。
+    mode: extracted
+    parenthetical: 趴在地上求饶
+  - kind: dialogue
+    character: c1
+    line: 少爷我天生有才，还用练么？不怕告诉你，少爷练的叫格雷西，对你还用不着厉害招数。
+    mode: extracted
+    parenthetical: 傲然
+  - kind: action
+    text: 庞丁攒下的三钱血汗银子落入庞雨手中。庞雨松开庞丁，看着掌中暗白色的小银块。
+  - kind: dialogue
+    character: c1
+    line: 怎么才这么点，这能值多少钱。
+    mode: extracted
+    parenthetical: 嫌弃
+  - kind: action
+    text: 庞丁坐起就要放声大哭——外厅忽然传来一阵吵闹。
+  - kind: action
+    text: 是庞雨母亲的声音，似乎事情还不小。
+  - kind: dialogue
+    character: c1
+    line: 我娘这是在跟谁吵架。
+    mode: extracted
+    parenthetical: 侧耳听
+  - kind: dialogue
+    character: c2
+    line: 少爷你听了别生气，街坊说你头被打了，咱家药库又塌了，药材都泡水废了，刘家说是要退婚，好像吵的就这事。
+    mode: extracted
+    parenthetical: 细听片刻，迟疑着
+  - kind: dialogue
+    character: c1
+    line: 啊？退婚？非要这个桥段么，听听热闹去。
+    mode: extracted
+    parenthetical: 眼睛一亮
+  - kind: action
+    text: 庞雨一把扔下木条，起身就往厅堂方向走。
+  - kind: transition
+    text: 切至：前厅。
+  quality_flags: []
+- id: s8
+  index: 8
+  heading:
+    int_ext: EXT
+    location: 庞家正厅外窗下
+    time: 清晨
+  summary: 庞雨与庞丁趴在正厅外偷听老妈与刘婶为退婚争吵
+  source:
+    chapter: 3
+    span:
+    - 0
+    - 25
+  conflict: 刘家上门逼婚，庞家老妈以婚书、里老、大明律正面硬刚；庞雨在窗外摸下巴自嘲，先锋情绪与街坊压力交织。
+  characters:
+  - c1
+  - c2
+  - 庞雨老妈
+  - c7
+  elements:
+  - kind: action
+    text: 清晨。庞家正厅外。庞雨和庞丁轻手轻脚摸到窗下,偷偷从窗缝向里张望。
+  - kind: action
+    text: 厅内。庞雨老妈双手叉腰站着,对面刘家婶子也站着,两人都不坐椅子。
+  - kind: dialogue
+    character: 庞雨老妈
+    line: |-
+      我说刘家妹子,咱们多年街坊,姐姐我啥时候说过假话。跟你说了咱家雨儿没事,头伤是不假,也没伤到你说那么要紧。你这倒好,赶在天刚亮,铺子都没做成头个生意,你就上门说这事。你自家也做买卖的,这时辰可选得真是时候。
+    mode: extracted
+  - kind: dialogue
+    character: c7
+    line: |-
+      那是当家的非要让我来,我这也是没法子不是。这庞哥儿伤势也不是我说的,人家都说了,庞雨头上定是破了口,怎么破的咱不讲它了。但头疮入了风,没准被野鬼上身了。庞哥儿脑子原本就有些不太那啥,倒也没出过大事,日子还是能过的。但这次头伤之后,说话做事都怪得紧,常常崩些没由来的话。昨日把胡子剃了,非要那剃夫把下巴刮得干干净净,满街上有谁这么干的。还听说要剃头发,亏得那剃夫没敢。这到底是要当和尚还是干啥,把女儿嫁给他,我这心总是放不下啊。
+    mode: extracted
+  - kind: action
+    text: |-
+      窗外。庞雨摸了摸自己光溜溜的下巴,嘴角扯了一下,露出不自在的表情。明代以美髯为美,旧庞雨十七八岁就留了一截胡子,庞雨昨日上街一气给剃光了,这事已被街坊传得人人皆知。
+  - kind: dialogue
+    character: 庞雨老妈
+    line: |-
+      少年人又不是老夫子,胡子爱留不留。妹子你想退婚,没得靠这等无聊理由。订婚有婚书为凭,有里老为证,左邻右舍人人皆知。若是由着想退就退,要那婚书作甚。
+    mode: extracted
+  - kind: dialogue
+    character: c7
+    line: |-
+      庞家姐姐你看,我们也不想不是。但庞哥儿这脑子越发的傻,那三亲六戚闲话起来,我那当家的面子浅……这个总是不如意。倒是两家各自另找,大家都妥帖嘛。
+    mode: extracted
+  - kind: action
+    text: 窗外。庞雨听得发笑。
+  - kind: dialogue
+    character: c2
+    line: 退婚可耻,少爷你还笑得出来。
+    mode: extracted
+    parenthetical: 扁着嘴
+  - kind: dialogue
+    character: c1
+    line: 退婚有个啥可耻,少爷我还找不到媳妇不成。
+    mode: extracted
+  - kind: dialogue
+    character: c2
+    line: 咱药铺从来没有昧着良心赚钱,怎地还要遭这难。没了药铺,谁愿嫁给你,老天真的不保佑好人么。
+    mode: extracted
+    parenthetical: 眼眶突然一红
+  - kind: action
+    text: 庞雨拍了拍庞丁的肩膀。
+  - kind: dialogue
+    character: c1
+    line: 别难过,咱家不会垮的。老天爷不保,少爷保。
+    mode: extracted
+  - kind: dialogue
+    character: c2
+    line: 少爷你有啥法子?
+    mode: extracted
+    parenthetical: 疑惑地看着庞雨
+  - kind: dialogue
+    character: c1
+    line: 眼下还不知道,但少爷我从来都是要赢。只要不放弃,希望总会出现。
+    mode: extracted
+  - kind: dialogue
+    character: c2
+    line: 所以你抢我银子?
+    mode: extracted
+  - kind: action
+    text: 庞雨抬手要拍庞丁脑袋。厅内传来「啪」的一声大响。
+  - kind: dialogue
+    character: 庞雨老妈
+    line: 大明律,订婚不是你说退就退。夫家五年无故不娶,才准你退。
+    mode: extracted
+    parenthetical: 正义凛然
+  - kind: dialogue
+    character: c7
+    line: |-
+      我说庞家姐姐,咱们姐妹多年,退不退婚这不还跟您商量呢,犯的着扯大明律。知道你家庞哥儿是皂隶,那也就是皂隶不是。说好听点衙门当差,难听点就是各房走卒。我家舅叔还在安庆府当司吏呢。你要扯这个,咱还非退不可了。
+    mode: extracted
+    parenthetical: 一拍桌子
+  - kind: action
+    text: 庞雨侧头凑近庞丁耳边。
+  - kind: dialogue
+    character: c1
+    line: 要吵架了,咱也得说点啥对不对。
+    mode: extracted
+    parenthetical: 压低声音
+  - kind: dialogue
+    character: c2
+    line: 该说。不过说啥好呢。
+    mode: extracted
+    parenthetical: 肯定地点点头
+  quality_flags: []
+- id: s9
+  index: 9
+  heading:
+    int_ext: INT
+    location: 庞家正厅
+    time: 清晨
+  summary: 庞雨闯入大厅高喊「莫欺少年穷」反被嘲，两家婆娘激烈对骂直至刘婶被门槛绊出门外
+  source:
+    chapter: 3
+    span:
+    - 26
+    - 42
+  conflict: 庞雨试图以穿越者口吻主持公道却当场翻车；正厅口水战升级为三打一围攻战，刘婶败走门前摔跤，庞家主场险胜。
+  characters:
+  - c1
+  - 庞雨老妈
+  - c7
+  - c2
+  - 庞家帮佣婆子
+  elements:
+  - kind: action
+    text: 庞家正厅，清晨。庞雨大步跨入，按自己想象中的姿势一拂衣袖，呼啦一声。两个女人同时转头看向他。庞雨一脸严肃凌然。
+  - kind: dialogue
+    character: c1
+    line: 哼，莫欺少年穷！
+    mode: extracted
+    parenthetical: 凌然严肃
+  - kind: action
+    text: 两个女人呆了一下。刘家婶子愣住。
+  - kind: dialogue
+    character: c7
+    line: 果真魔怔了不是。
+    mode: extracted
+    parenthetical: 愣愣地
+  - kind: dialogue
+    character: 庞雨老妈
+    line: 呸呸！少年穷个屁，咱老庞家比他刘家有钱多了。
+    mode: extracted
+    parenthetical: 回过神来
+  - kind: dialogue
+    character: c7
+    line: |-
+      你怎么说话呢！你庞家不就开个生药铺吗？我老刘家铺子挣的哪一年少了三十两的，说有钱轮得上你们吗？那年失火的时候，都是我当家的帮你们救火搬药材，胡子都烧个精光，不然你们店子咋能开到今日！
+    mode: expanded
+    parenthetical: 不服气
+  - kind: dialogue
+    character: 庞雨老妈
+    line: 咱庞家难道就没帮过你们？哪次你们周转不开，不是我们庞家接济的！你们日子也就好过两三年，转过身就不认人了……
+    mode: extracted
+    parenthetical: 不甘示弱
+  - kind: action
+    text: |-
+      厅中战事再起，激烈更甚方才。庞雨扫了一眼，不想退出去，便找位置坐下，脑袋转来转去，谁发言就转向谁，饶有兴趣地听两个女人吵。
+  - kind: action
+    text: 庞雨听着听着，喷到脸上的口水也不能降低他的兴致，直乐得合不拢嘴。一刻钟过去，战况陷入胶着。
+  - kind: action
+    text: 庞家帮佣的婆子也加入战团，天井之中唾沫横飞。
+  - kind: action
+    text: 庞雨老妈占有主场之利，在婆子助攻下攻势一浪高过一浪，主队逐渐控制场上局势。刘家婶子招架不住，且战且退。
+  - kind: action
+    text: 庞雨老妈带着婆子追杀到大门，形成双鬼拍门之势。庞丁从外面跑进来帮忙，庞家三打一。庞雨在一旁助威。
+  - kind: action
+    text: 比赛接近补时阶段。刘家婶子边战边退，防守反击越打越乱，在门口一时没留意脚下，被门槛挂住后脚跟，一屁股仰天跌出门外。
+  - kind: dialogue
+    character: c1
+    line: 一比零！
+    mode: expanded
+    parenthetical: 在后面兴奋地大喊
+  - kind: action
+    text: 刘家婶子狼狈地爬起来，连灰都没拍。
+  - kind: dialogue
+    character: c7
+    line: 你们等着！
+    mode: expanded
+    parenthetical: 扔下一句
+  - kind: action
+    text: 刘家婶子转身要跑。庞雨追到门口。
+  - kind: dialogue
+    character: c1
+    line: 刘婶你慢些，要不吃了饭再走。
+    mode: extracted
+    parenthetical: 对着刘家婶子的背影大声
+  - kind: action
+    text: |-
+      刘家婶子回头呸了一声。刘家铺子就在同一条街，在周围街坊注视下，刘婶边跑边拍屁股上的灰，身体怪异地扭动着，很快转弯消失在道路上。
+  - kind: transition
+    text: 切至外景街道，刘婶远去的背影。
+  quality_flags: []
+- id: s10
+  index: 10
+  heading:
+    int_ext: INT
+    location: 庞家正厅
+    time: 清晨
+  summary: 庞家老妈战后安抚庞雨，母子讨论资金链断裂与退婚上半场之危
+  source:
+    chapter: 3
+    span:
+    - 43
+    - 56
+  conflict: 表面捷报实则暗藏危机——药库塌了、货不能变现、外有债务，「上半场胜、下半场客场」的暗流浮现。
+  characters:
+  - c1
+  - 庞雨老妈
+  elements:
+  - kind: action
+    text: INT.庞家正厅 -清晨。庞雨拍着巴掌迎老妈进门。庞雨细看：老娘干瘦身材，深色硬浆布衣，腰系围腰，额上汗珠夹杂白发。
+  - kind: action
+    text: 老妈脸上毫无胜利的喜色，只是一脸慈祥地看向庞雨，声音陡然压低，轻言细语。
+  - kind: dialogue
+    character: 庞雨老妈
+    line: 雨儿不需理她, 刘家也是看我们药库塌了, 这药材都……没了, 刘家这没脸皮的势利眼。
+    mode: extracted
+    parenthetical: 轻言细语, 生怕吓着儿子
+  - kind: dialogue
+    character: c1
+    line: 娘, 我是担心啊。
+    mode: extracted
+    parenthetical: 面露担忧
+  - kind: dialogue
+    character: 庞雨老妈
+    line: 你担心个甚, 这婚配总是父母操持, 刘家婶子那些胡言乱语, 你不可往心里去,咱老庞家能撑过这一关去。
+    mode: extracted
+    parenthetical: 拍拍儿子肩膀
+  - kind: dialogue
+    character: c1
+    line: |-
+      我担心的是, 我庞家虽然初战告捷, 但这最多是上半场取胜,胜利是暂时的。退婚是双方的嘛, 下半场搞不好得去打客场。看刘家婶子这战斗力不弱, 到时候甚有可能被刘家反败为胜。
+    mode: extracted
+    parenthetical: 严肃地摇头
+  - kind: dialogue
+    character: 庞雨老妈
+    line: 咱家占着理,哪能让她反败为胜了。
+    mode: extracted
+    parenthetical: 不服气
+  - kind: dialogue
+    character: c1
+    line: |-
+      可是咱家现在遭了水灾,货没了不能变现, 外边还有债务,资金链已经断裂了。首要问题得解决资金, 有啥固定资产无形资产的, 能变现都变现。
+    mode: extracted
+    parenthetical: 神情凝重
+  - kind: action
+    text: 老娘听他口中胡言乱语,以为儿子傻病又犯了, 又不好责骂, 不由叹了一口气,默默提起围腰擦泪。
+  - kind: dialogue
+    character: c1
+    line: 娘, 刘家闺女长得好看不?
+    mode: extracted
+    parenthetical: 抬头看着娘
+  - kind: dialogue
+    character: 庞雨老妈
+    line: 呸,有什么好看的, 就她妈那个样子, 也生不出好看的来。
+    mode: extracted
+    parenthetical: 呸了一声, 一脸不屑
+  - kind: dialogue
+    character: c1
+    line: 要是不好看,咱们另外找嘛, 说媳妇可将就不得。
+    mode: extracted
+    parenthetical: 宽慰地
+  - kind: dialogue
+    character: 庞雨老妈
+    line: 那不成。以前咱家生意好, 他们就赶着来嫁,看到走个霉运就要退, 有这等好事?
+    mode: extracted
+    parenthetical: 翻白眼瞪了庞雨一眼
+  - kind: dialogue
+    character: 庞雨老妈
+    line: 就便是要退,也不是她们打上门来退婚, 还敢说你脑子被打傻了, 当我们庞家什么呢! 日后街坊邻居谁还看得起。
+    mode: extracted
+    parenthetical: 越说越气
+  - kind: action
+    text: 便宜老妈说完便转身往天井走去清理药材, 一边走一边数落刘家的不是, 从前十年说到后十年,声音渐渐远去。
+  quality_flags: []
+- id: s11
+  index: 11
+  heading:
+    int_ext: INT
+    location: 刘家铺子
+    time: 清晨
+  summary: 庞雨溜到刘家铺子，软中带硬劝刘婶另寻退婚方案
+  source:
+    chapter: 3
+    span:
+    - 57
+    - 62
+  conflict: 庞雨独自上门谈判，借「理解、体面、不伤和气」软化刘婶，准备提出一个双方都能下台的退婚主意。
+  characters:
+  - c1
+  - c7
+  elements:
+  - kind: action
+    text: 清晨。刘家铺子门市。两个街坊探头听热闹，门口闹哄哄。
+  - kind: action
+    text: 庞雨蹑手蹑脚溜到门口，街坊认出他，慌忙散去。
+  - kind: action
+    text: 庞雨穿过门市，径直走向后进。刘婶一见来人，立刻噤声，有些尴尬。
+  - kind: dialogue
+    character: c7
+    line: 雨哥儿，你也知道的，不是刘婶看不上你，只是那啥……
+    mode: extracted
+    parenthetical: 讪讪开口
+  - kind: dialogue
+    character: c1
+    line: 刘婶，我理解。
+    mode: extracted
+    parenthetical: 打断，语气随和
+  - kind: action
+    text: 庞雨往前凑了半步，压低声音。
+  - kind: dialogue
+    character: c1
+    line: 遇到这种事，当父母的谁不想自家女儿嫁好一点，我都理解的。但咱妈也是顾着我好，她也没错嘛。
+    mode: extracted
+    parenthetical: 低声
+  - kind: action
+    text: 刘婶听他张口就是「他妈」，眼一瞪，嘴唇翕动，庞雨察觉，赶紧接上。
+  - kind: dialogue
+    character: c1
+    line: |-
+      大家都是街坊邻居，咱妈要个脸面，刘婶刘叔也是要脸面的人。闹来闹去让人看笑话不说，还伤了两家和气，万一再气个好歹的，你说这谁愿意看到。
+    mode: extracted
+    parenthetical: 忙不迭
+  - kind: dialogue
+    character: c7
+    line: 可不是，我不是找你妈商量嘛，你看她那样，还要扯大明律。
+    mode: extracted
+    parenthetical: 叹气
+  - kind: dialogue
+    character: c1
+    line: |-
+      刘婶，咱不扯大明律这些不相干的。总之就是你们要退婚，咱妈不退婚，对不对？两方都不让步，这么闹下去不是办法，问题总要解决嘛。
+    mode: extracted
+    parenthetical: 摆手，笑
+  - kind: action
+    text: 庞雨微微一顿，往前探了探身。
+  - kind: dialogue
+    character: c1
+    line: 侄子这里有个主意，咱俩商量商量……
+    mode: extracted
+    parenthetical: 压低
+  - kind: action
+    text: 刘婶盯着他，满脸狐疑，上下打量这个「傻子」。
+  - kind: dialogue
+    character: c7
+    line: 咱俩商量啥？
+    mode: extracted
+    parenthetical: 将信将疑
+  quality_flags: []
+- id: s12
+  index: 12
+  heading:
+    int_ext: INT
+    location: 庞家堂屋/庞雨卧室
+    time: 日
+  summary: 庞雨支开庞妈、偷出婚书藏入怀中
+  source:
+    chapter: 4
+    span:
+    - 0
+    - 11
+  conflict: 庞雨要赶在母亲回来前偷走婚书卖钱，与庞丁的良知顾虑形成对峙
+  characters:
+  - c1
+  - c2
+  elements:
+  - kind: action
+    text: 庞家堂屋。庞丁凑到少爷庞雨身边，压低声音报信。
+  - kind: dialogue
+    character: c2
+    line: 少爷，庞妈出去买菜了。
+    mode: extracted
+  - kind: dialogue
+    character: c1
+    line: 给少爷我盯好，她回来你就在门口大声喊。
+    mode: extracted
+  - kind: dialogue
+    character: c2
+    line: 少爷，喊啥啊？
+    mode: extracted
+  - kind: dialogue
+    character: c1
+    line: 你个笨的，就喊说夫人回来啦，我来帮你拿菜。
+    mode: extracted
+  - kind: dialogue
+    character: c2
+    line: 少爷啊，你真要偷婚书去卖啊？这就是你永不放弃的法子？
+    mode: extracted
+    parenthetical: 胆战心惊
+  - kind: dialogue
+    character: c1
+    line: 会不会说话呢！这不叫卖，这叫无形资产变现。
+    mode: extracted
+  - kind: dialogue
+    character: c2
+    line: 可咱家吵架都赢了啊，你卖了婚书，庞妈就没物证了，庞家的名声咋办啊？少爷，要不咱别偷了。
+    mode: extracted
+  - kind: dialogue
+    character: c1
+    line: |-
+      你懂个屁！就是吵赢的时候才好谈价，不然刘婶那铁公鸡能出到十两么？名声是什么？只算无形资产。刘家闹退婚，咱这无形资产就成了不良资产。我这叫不良资产变现，解决咱家资金链断裂的大事。不懂你少说话，滚！
+    mode: extracted
+    parenthetical: 压低嗓门、急切
+  - kind: action
+    text: 庞雨骂完庞丁，悄悄推开堂屋门，往左闪进卧室。
+  - kind: action
+    text: 庞雨根据庞丁的情报，从枕头下摸出钥匙，蹲下身打开床下柜的柜门。
+  - kind: action
+    text: 随手翻看几下，寻到婚书；又翻找一阵，确认仅此一份，立即把柜子锁上，钥匙归还原处。
+  - kind: action
+    text: 庞雨匆匆浏览一遍婚书，往怀里一揣，快步出屋。
+  - kind: transition
+    text: 切至 庞雨往刘婶家方向走去。
+  quality_flags: []
+- id: s13
+  index: 13
+  heading:
+    int_ext: INT
+    location: 刘婶家
+    time: 日
+  summary: 庞雨拿婚书换十两银子，并以聘礼银手镯为由要回原物
+  source:
+    chapter: 4
+    span:
+    - 12
+    - 31
+  conflict: 庞雨以退婚违约金要挟刘婶，又反手讨回聘礼与银镯，与刘婶讨价还价
+  characters:
+  - c1
+  - c7
+  elements:
+  - kind: action
+    text: 刘婶家厅堂，日光透过半掩的门扉。庞雨手持一纸婚书，刘婶伸手欲接。
+  - kind: dialogue
+    character: c1
+    line: 刘婶你看看是这本不？
+    mode: extracted
+    parenthetical: 将婚书往回一缩
+  - kind: action
+    text: 刘婶伸手来拿，庞雨胳膊一缩，婚书收回怀中。
+  - kind: dialogue
+    character: c1
+    line: 刘婶，咱可说好了的，见到违约金我才给你。
+    mode: extracted
+    parenthetical: 带着点讨价还价的笑
+  - kind: action
+    text: 刘婶扁扁嘴，从怀里摸出一个钱袋递过去。
+  - kind: dialogue
+    character: c7
+    line: 这么多年街坊，庞哥儿你还信不过刘婶咋地。
+    mode: extracted
+    parenthetical: 堆着笑
+  - kind: action
+    text: 庞雨接过钱袋掂了掂，神色夸张地睁大眼睛。
+  - kind: dialogue
+    character: c1
+    line: 刘婶，好像不对吧，你这是多少？
+    mode: extracted
+    parenthetical: 假装惊讶
+  - kind: dialogue
+    character: c7
+    line: 十两啊，你说的那啥违约金，可不就是十两。
+    mode: extracted
+  - kind: dialogue
+    character: c1
+    line: |-
+      刘婶你这可不厚道了，我刚看了婚书，咱家当年还给你十一两聘礼呢，还有一对银制的手镯。既然是你不执行合同了，咱得两说，先退订金再说这违约金。
+    mode: extracted
+    parenthetical: 掰着手指头算
+  - kind: dialogue
+    character: c7
+    line: 可咱家闺女等你这些年……
+    mode: extracted
+    parenthetical: 口中嚅嚅
+  - kind: dialogue
+    character: c1
+    line: |-
+      等啥呢等？难道你闺女七岁就要嫁人的。亏得你还不知道青春损失费，不然您不得套个童年损失费，我还得补你银子是吧？刘婶你就跟侄子我明说，你到底诚心退婚还是想叫我妈加聘礼？不诚心呢，侄子我转身就走，回去告诉我妈，说刘婶退婚是装样子的，只是嫌银子给少了。
+    mode: extracted
+    parenthetical: 打断，语速加快
+  - kind: action
+    text: 刘婶神色尴尬，顿了一下，挤出笑脸换上一副苦情相。
+  - kind: dialogue
+    character: c7
+    line: |-
+      侄子你看啊，咱都是老街坊了，也不瞒你说，咱家这铺子，年景好的时候，一年也就赚个十多两。你看那违约金拿走十两，咱家今年可没法过了。侄子你也不能让刘婶刘叔饿肚子，要不就少些，退给婶五两成不成？
+    mode: extracted
+    parenthetical: 凑近一步
+  - kind: dialogue
+    character: c1
+    line: |-
+      这我可不信。刘婶你刚才在我家说哪年都没少过三十两，我可听得真真儿的，才转个身你就变成十多两了？婶你可不能看菜下饭，欺负我这晚辈。
+    mode: extracted
+    parenthetical: 连连摇头
+  - kind: dialogue
+    character: c1
+    line: |-
+      十两违约金而已嘛，难道为了十两银子，就能把自家女儿往火坑里推？明知道我是个傻子还让女儿嫁给我，那可害了你女儿一辈子。你想想看，怀一个孩子受多大罪，一把屎一把尿带大了，多辛苦啊，出落得水灵灵的、如花似玉的姑娘，才值十两银子么？
+    mode: extracted
+    parenthetical: 掰着指头数
+  - kind: dialogue
+    character: c1
+    line: 要说这次你侄子咱家，药库泡水了，银子就没了，我傻就不说了，这次偏还伤在头上，日后难保不有个反复，我也不想把你女儿拖累了。
+    mode: extracted
+    parenthetical: 语气一缓
+  - kind: action
+    text: 庞雨见刘婶闷头不语，一脸舍不得银子的模样，舔舔嘴唇继续劝说。
+  - kind: dialogue
+    character: c1
+    line: |-
+      要是以后你女儿受不了苦，回娘家问起来，娘你为啥把我嫁个又穷又傻的小子呢？刘婶你咋说呢，说你舍不得十两违约金么？您可说不出口。
+    mode: extracted
+  - kind: dialogue
+    character: c1
+    line: 就即便是算现钱，这边退了不是能新找婆家？就以咱刘家妹子的相貌家世，还不得三五十两？怎么也亏不了咱婶子。
+    mode: extracted
+    parenthetical: 话锋一转
+  - kind: action
+    text: 刘婶越听脸色越难看，嘴唇翕动几下没吐出话来。她一向在街市上算能说会道的，今日反而被一个傻子说得哑口无言。
+  - kind: action
+    text: 低头一狠心，抬起头来。
+  - kind: dialogue
+    character: c7
+    line: 十两就十两，那咱可说好了，这些都还你，以后你妈过来闹事，你可得当见证人，说你答应了退婚的。
+    mode: extracted
+    parenthetical: 咬牙
+  - kind: dialogue
+    character: c1
+    line: |-
+      刘婶你放心，咱可是最讲信用的人。就我办那公司……那店，连续三年评为重合同守信用店面，不信你打听打听去。再者来说，婚书都给你了，咱妈没了凭据，还找你闹个啥？那不成无理取闹了。
+    mode: extracted
+    parenthetical: 拍拍胸脯
+  - kind: dialogue
+    character: c1
+    line: 但我给你拿婚书这事，你也别满世界嚷去，我才好想法子跟咱妈交代。
+    mode: extracted
+    parenthetical: 压低声音
+  - kind: action
+    text: 刘婶下定决心，转身进里屋，片刻拿出一小包银子递与庞雨。
+  - kind: action
+    text: 庞雨打开小包——除碎银外，里头果然还卧着一对银手镯。当即笑眯眯地拢入袖中，又将那一纸婚书递过去。
+  - kind: dialogue
+    character: c1
+    line: 刘婶，合作愉快。
+    mode: extracted
+    parenthetical: 拱手
+  - kind: transition
+    text: 切至：庞雨推门而出，脚步不停，巷口日光晃眼。
+  quality_flags: []
+- id: s14
+  index: 14
+  heading:
+    int_ext: INT
+    location: 刘婶家
+    time: 日
+  summary: 刘婶验看婚书后如释重负，回神才察觉庞雨不像傻子
+  source:
+    chapter: 4
+    span:
+    - 32
+    - 32
+  conflict: 刘婶得意了结心事，却忽然对庞雨异常表现产生疑心
+  characters:
+  - c7
+  elements:
+  - kind: action
+    text: 刘婶家。日光从窗棂斜入。刘婶捧着婚书翻来覆去地看，眉心先紧后松。
+  - kind: dialogue
+    character: c7
+    line: 总算没害自家女儿嫁给一个傻子。
+    mode: extracted
+    parenthetical: 如释重负，把婚书捂在胸口，长长舒一口气
+  - kind: action
+    text: 刘婶忽然回过神，目光一凝，盯着婚书上的字句。
+  - kind: dialogue
+    character: c7
+    line: 哎，不对啊……他这砍价的条理，哪像个傻子能干出来的。
+    mode: extracted
+    parenthetical: 自言自语，越说越狐疑
+  - kind: dialogue
+    character: c7
+    line: 我……
+    mode: expanded
+    parenthetical: 心下一惊，话到嘴边又咽回去
+  - kind: transition
+    text: 切至
+  quality_flags: []
+- id: s15
+  index: 15
+  heading:
+    int_ext: INT/EXT
+    location: 庞家天井
+    time: 日
+  summary: 庞雨父母发现婚书不见，庞雨借”白胡子老神仙”托梦谎称改换亲事
+  source:
+    chapter: 4
+    span:
+    - 33
+    - 61
+  conflict: 父母为婚书丢失心急如焚，庞雨为圆谎设计”梦中开窍”的戏码，并顺势提出退刘家亲事
+  characters:
+  - c1
+  - 老妈
+  - c3
+  - c2
+  elements:
+  - kind: action
+    text: 天井内日光斜照，簸箕里摊着各色药材。老妈一边嘀咕一边翻找，脚步急切。
+  - kind: dialogue
+    character: c1
+    line: 娘，找啥东西呢，要不要我帮忙。
+    mode: extracted
+    parenthetical: 从屋内探出头来
+  - kind: dialogue
+    character: 老妈
+    line: 不，不要，就是有个药少了些，你歇着去。
+    mode: extracted
+    parenthetical: 慌忙摆手
+  - kind: action
+    text: 老妈低头在晒药的簸箕下翻找，一无所获，身子一软差点跌倒。
+  - kind: action
+    text: 庞雨的便宜老爹穿着蓝色道袍样式直身，方脸挂着一把胡子，立在一旁，面有怒色。
+  - kind: dialogue
+    character: c3
+    line: 整天都干些啥事，放在柜子里好好的，没事翻出来看个甚，平日一个东西，就爱这里藏那里藏，藏得最后自己都找不见了。
+    mode: extracted
+    parenthetical: 指着老妈恼怒道
+  - kind: dialogue
+    character: 老妈
+    line: 这婚书分明是在床下柜里……我怎地知道。
+    mode: extracted
+    parenthetical: 委屈辩白
+  - kind: action
+    text: 庞雨听见，赶快从屋里出来打圆场。
+  - kind: dialogue
+    character: c1
+    line: 娘你是咋地了，啥东西不见了。
+    mode: extracted
+    parenthetical: 装作关心
+  - kind: dialogue
+    character: 老妈
+    line: 那婚书不见了，平日倒也罢了，正赶上刘家要退婚，那许多定亲的银子可怎么办。
+    mode: extracted
+    parenthetical: 欲哭无泪
+  - kind: action
+    text: 庞雨凑上前，故作神秘，压低声音。
+  - kind: dialogue
+    character: c1
+    line: |-
+      娘，肯定老天要我们庞家退婚，把那婚书收回去了。我这几天都作梦来着，有个白胡子老爷爷跟我说，以前我脑子傻，运道不好，就得换一门亲改改运道，这是天意啊。
+    mode: extracted
+    parenthetical: 信誓旦旦
+  - kind: dialogue
+    character: c3
+    line: 不是又胡说么，梦岂能当真，也是在家里，出去不可胡说，不然不定怎生看你。
+    mode: extracted
+    parenthetical: 摇头
+  - kind: action
+    text: 庞雨眼珠一转，立刻编好假话。
+  - kind: dialogue
+    character: c1
+    line: 真的，娘你看啊。那白胡子老爷爷是个神仙，还在梦里教过我写字，不信你说药材名，我来写。
+    mode: extracted
+    parenthetical: 一脸认真
+  - kind: action
+    text: 庞雨快步走向柜台，取来纸笔摆好。
+  - kind: dialogue
+    character: c1
+    line: 娘你说药名。
+    mode: extracted
+    parenthetical: 执笔在手
+  - kind: action
+    text: 老妈将信将疑地看着儿子。
+  - kind: dialogue
+    character: 老妈
+    line: 甘草、荷葉、草烏、何首烏。
+    mode: extracted
+    parenthetical: 勉强开口
+  - kind: action
+    text: |-
+      庞雨落笔疾书，毛笔字歪歪扭扭，但一个个药名跃然纸上。老爹本想离开，晃眼瞥见纸面，脚步顿住，凑近细看，嘴巴越张越大——九个字里只有「葉」错成「叶」、「烏」写成「乌」二字有误。老妈看不懂字，焦急地探头。
+  - kind: dialogue
+    character: 老妈
+    line: 咋样咋样？
+    mode: expanded
+    parenthetical: 急切地问
+  - kind: dialogue
+    character: c3
+    line: 写错了两个，但其他真的都对了，雨儿以前哪会写字，难道真的是……
+    mode: extracted
+    parenthetical: 嘴唇颤抖
+  - kind: dialogue
+    character: c1
+    line: |-
+      是这样的，那白胡子老神仙每次来的时候都是腾云驾雾烟云缭绕的，有时候看不清黑板，模模糊糊的，所以有些写错了，但也记了好多了，他还教我数学英语啥的……你们也不知道，以后再考吧。
+    mode: extracted
+    parenthetical: 赶紧接话
+  - kind: dialogue
+    character: 老妈
+    line: 雨儿啊你可看清了，你梦中这白胡子到底是神仙还是菩萨，咱们好找对地方给人家上香啊！
+    mode: extracted
+    parenthetical: 激动起来
+  - kind: dialogue
+    character: c3
+    line: 有胡子当然是神仙，菩萨都是和尚，哪有白胡子。明日你去道观里面上香，不要走错了。
+    mode: extracted
+    parenthetical: 严肃纠正
+  - kind: action
+    text: 老妈跪在天井中，面朝苍天，痛哭失声。
+  - kind: dialogue
+    character: 老妈
+    line: 难道是老天开眼，咱家雨儿不是傻子了，能读书能认字了，老庞家不会断在我手里，祖宗保佑啊！
+    mode: extracted
+    parenthetical: 朝天哭诉
+  - kind: action
+    text: 庞雨愣了一下，回过神来，趁父母激动，连忙接过话头。
+  - kind: dialogue
+    character: c1
+    line: |-
+      所以那婚书不见了就是天意啊，您看咱家今年，血光之灾受了，水灾也受了，这运道实在得改。咱们得听白胡子老爷爷的，改一门亲换换运道，正好刘家也要退，咱们让他退了银子……实在退不了银子就算了。
+    mode: extracted
+    parenthetical: 趁热打铁
+  - kind: dialogue
+    character: c3
+    line: |-
+      啥银子也比不过我儿子开窍了，爹和你娘以后都靠你养老送终呢。既是神仙说了的，这亲就绝对不能再结，赶明儿我跟老刘说一声，寻个中人见证一下，两家各自另寻就算了结了，也省得街坊间风言风语。
+    mode: extracted
+    parenthetical: 激动地一拍手
+  - kind: action
+    text: 庞雨暗暗松了口气，老妈拭泪，老爹神情郑重，天井里药香浮动，一家三口各怀心事。
+  - kind: transition
+    text: 切至：庞雨独坐屋中，回味方才的「神迹」。
+  quality_flags: []
+- id: s16
+  index: 16
+  heading:
+    int_ext: INT
+    location: 刘婶家
+    time: 日
+  summary: 庞雨再赴刘婶家对口风，约定互不揭穿
+  source:
+    chapter: 4
+    span:
+    - 62
+    - 64
+  conflict: 刘婶怀疑庞雨并非真傻，庞雨无心应对，只叮嘱她保守卖婚书秘密并等候老爹办手续
+  characters:
+  - c1
+  - c7
+  elements:
+  - kind: action
+    text: 庞雨一拍胸口，语气斩钉截铁。
+  - kind: dialogue
+    character: c1
+    line: 我记得还有一副银镯子，定钱可以不要，这定亲信物一定要退回来。爹娘你们等着，我这就去跟刘婶退亲，还得把镯子要回来。
+    mode: extracted
+  - kind: transition
+    text: 切至
+  - kind: action
+    text: 片刻功夫，庞雨已到刘婶家中。
+  - kind: dialogue
+    character: c1
+    line: 我爹妈都同意了，您别担心。卖婚书的事，您千万可别跟人提，安心等我爹找中人来办手续就行。
+    mode: expanded
+  - kind: action
+    text: 刘婶脸色不太好，满脸狐疑地盯着庞雨，半天没开口。
+  - kind: action
+    text: 庞雨没工夫细想，转身要走，眼角余光扫到西厢房窗户上人影一闪——似是个身段不错的轮廓。再定睛去看，又没了。
+  quality_flags: []
+- id: s17
+  index: 17
+  heading:
+    int_ext: INT
+    location: 庞家堂屋
+    time: 日
+  summary: 庞雨把银两与银镯交给父母，全家视此为祖宗显灵
+  source:
+    chapter: 4
+    span:
+    - 65
+    - 71
+  conflict: 真相（卖婚书）与表象（神明显灵、儿子开窍）之间的张力，全家沉浸于希望之中
+  characters:
+  - c1
+  - c3
+  - 老妈
+  - c2
+  elements:
+  - kind: action
+    text: 庞家堂屋，日。老两口坐在桌边，庞丁垂手立在一旁。
+  - kind: action
+    text: 庞雨自怀中取出银镯和一包银子，轻轻放在桌上，笑着看向父母。
+  - kind: dialogue
+    character: c1
+    line: 爹妈，我把镯子要回来了，还把定亲的十一两都退回来了，从今后咱们就跟刘家没关系了。
+    mode: extracted
+    parenthetical: 笑眯眯
+  - kind: dialogue
+    character: c1
+    line: 刘婶说她知道自家理亏，觉得对不住咱老庞家，还多给咱五两违约金。
+    mode: extracted
+  - kind: action
+    text: 老庞头和老妈对视一眼，目光落在银子上，呆呆说不出话。
+  - kind: dialogue
+    character: c2
+    line: 少爷真的开窍了。
+    mode: extracted
+    parenthetical: 忍不住开口
+  - kind: action
+    text: 庞雨看着眼前激动的三人，抬手拍了拍庞丁的肩。
+  - kind: dialogue
+    character: c1
+    line: 跟你说过，少爷是永远争胜的人，困难总会过去的。
+    mode: extracted
+    parenthetical: 拍了拍庞丁肩膀
+  - kind: action
+    text: 老两口互相看了一眼，又一起望向庞雨，满脸欣慰。
+  - kind: dialogue
+    character: 老妈
+    line: 能从刘婶那个铁公鸡那里把东西拿回来，咱家雨儿果然是不傻了！
+    mode: extracted
+    parenthetical: 对老庞头
+  - kind: dialogue
+    character: 老妈
+    line: 今天是七月十五啊，祖宗终于显灵了。
+    mode: extracted
+    parenthetical: 双手合十
+  - kind: transition
+    text: 切至 庞家堂屋全景，三代人围在桌前。
+  quality_flags: []
+- id: s18
+  index: 18
+  heading:
+    int_ext: EXT
+    location: 桐城西门水关河道
+    time: 夜
+  summary: 中元节夜庞雨与父母放河灯，被仙女揪耳朵质问退婚之事，刘婶出现后仙女假装温顺。
+  source:
+    chapter: 5
+    span:
+    - 0
+    - 43
+  conflict: 庞雨暗中贪图退婚银两不愿归还，仙女不许他退婚，母女对庞雨态度截然不同。
+  characters:
+  - c1
+  - c3
+  - 庞雨老妈
+  - c7
+  - c8
+  elements:
+  - kind: action
+    text: 夜幕降临，桐城县中四处灯烛点点。七月十五中元节，街道上人影重重，火光四起，烟雾缭绕。
+  - kind: action
+    text: 西门水关人头涌动，百姓打着灯笼或捧着河灯，街上灯火辉煌，城头上「宜民」二字清晰可见。河岸边儿童嬉笑，担郎沿街叫卖糕点。
+  - kind: action
+    text: 庞雨捧着一盏河灯来到水关旁，跟父母一起烧纸敬香。老爹老妈念叨着请祖宗多领些钱回去。
+  - kind: action
+    text: 庞雨径自找了个僻静处，蹲在河沿上放下河灯。河道中漂满各色灯影，倒映在水中，透过烧纸的薄烟，朦胧斑斓，犹如缓缓流出的灯河。
+  - kind: action
+    text: 庞雨看得入迷，直到大多人散去，才闭眼合十祷告。
+  - kind: dialogue
+    character: c1
+    line: |-
+      各位先人……不知道你们在哪里，但请保佑让我过好新的人生，依然永远争胜，同时当个好人……顺便还是多赚点钱，没钱实在没法过啊，也保佑一下我爸妈，主要保上辈子亲生的，要是还有空，也保佑一下这辈子便宜的。
+    mode: extracted
+    parenthetical: 闭眼合十，低声祷告
+  - kind: action
+    text: 正祷告间，庞雨耳朵突然一痛。
+  - kind: dialogue
+    character: c1
+    line: 哎哟，我的个去，谁他妈……
+    mode: extracted
+    parenthetical: 吃痛叫唤
+  - kind: dialogue
+    character: c8
+    line: 好你个庞傻儿还敢骂人？再骂一句试试！
+    mode: extracted
+    parenthetical: 手上加力，厉声
+  - kind: action
+    text: |-
+      耳朵上的力道松了。庞雨转头，看见一个全身白裙的少女，头上扎着两个发髻，眉如柳叶眼若点漆，站在灯火流动的河道旁，映着河水暖黄的柔光。
+  - kind: action
+    text: 庞雨揉揉眼睛，再睁开时，才发现这仙女双手叉腰，一脸煞气。
+  - kind: dialogue
+    character: c1
+    line: 仙女？
+    mode: expanded
+    parenthetical: 试探地
+  - kind: dialogue
+    character: c1
+    line: 这位美女有何贵干？
+    mode: extracted
+    parenthetical: 挤出一个笑
+  - kind: dialogue
+    character: c8
+    line: 几日不见这么会说话了，不用你奉承，本小姐原本便是美女。我问你，谁叫你去我家退婚的？
+    mode: extracted
+    parenthetical: 翻了个白眼
+  - kind: dialogue
+    character: c1
+    line: 你是刘婶的闺女？
+    mode: extracted
+    parenthetical: 惊讶地指着仙女
+  - kind: dialogue
+    character: c8
+    line: 敢装着不认识我。
+    mode: extracted
+    parenthetical: 杏眼圆睁
+  - kind: action
+    text: 仙女右手飞快一挥，熟练地又揪住庞雨的耳朵。
+  - kind: dialogue
+    character: c1
+    line: 刚认识了！轻点轻点，很痛！
+    mode: extracted
+    parenthetical: 连连求饶
+  - kind: dialogue
+    character: c8
+    line: 不痛揪你干啥，我还偏要重点。平日你在城里偷鸡摸狗胡混就罢了，居然还敢退婚。说，谁让你去退婚的。
+    mode: extracted
+    parenthetical: 手上加力
+  - kind: action
+    text: 庞雨乘机抓住仙女的手。
+  - kind: dialogue
+    character: c1
+    line: 那不是咱刘婶逼的。早上一早就来了，我当时是抗拒的，但刘婶说要是不退，就找安庆府那个亲戚帮忙，让我连皂隶都当不成。
+    mode: extracted
+    parenthetical: 讨饶地
+  - kind: dialogue
+    character: c8
+    line: 我娘逼的也不行。皂隶重要还是我重要？你不准答应我娘，不然我上哪去找那么听话的人当相公。
+    mode: extracted
+    parenthetical: 撅嘴
+  - kind: dialogue
+    character: c1
+    line: 我也不想啊，哪知道你这么漂亮……但我又觉得你值得更好的。你找我这么个傻子有啥意思，都是为你好。
+    mode: extracted
+    parenthetical: 眼珠一转，讨好地
+  - kind: action
+    text: 仙女哼一声松了手。
+  - kind: dialogue
+    character: c8
+    line: 这次算你会说话，不过我偏要找你这个傻的，聪明的谁听我话。就算我娘逼你，你还是不准退。明天你去求我妈去。
+    mode: extracted
+    parenthetical: 瞪他一眼
+  - kind: dialogue
+    character: c1
+    line: 那刘婶一准不能答应，昨日退了婚，我看她高兴着呢。
+    mode: extracted
+    parenthetical: 为难地
+  - kind: dialogue
+    character: c8
+    line: 高兴什么高兴？昨晚哭一宿，说被你骗了三十多两银子。反正你得去求我妈，不准退婚。
+    mode: extracted
+    parenthetical: 气道
+  - kind: dialogue
+    character: c1
+    line: 胡说么，明明只有二十一两。刘婶难道跟我一样，连退婚钱都要吃回扣？
+    mode: extracted
+    parenthetical: 低声嘀咕
+  - kind: action
+    text: 庞雨还待再说，突然瞥见刘婶一脸阴沉出现在身后河沿上，赶紧闭口，连连给刘家仙女打眼色。
+  - kind: action
+    text: 仙女偏头见到刘婶，立马收起煞气，一脸温良恭谦让，扶着刘婶的手臂。
+  - kind: dialogue
+    character: c8
+    line: 娘慢点，河边滑着呢。
+    mode: extracted
+    parenthetical: 声音温柔得能化开石头
+  - kind: action
+    text: 庞雨看着仙女的表演，心中暗叹这女子在后世绝对能去当个戏精。
+  - kind: dialogue
+    character: c1
+    line: 刘婶也来放河灯。
+    mode: extracted
+    parenthetical: 赔笑
+  - kind: action
+    text: 刘婶不看庞雨，脸色更加阴沉地白了他一眼。
+  - kind: dialogue
+    character: c7
+    line: 女子家，别和不相干的人说话，街坊见到像什么样子。
+    mode: extracted
+    parenthetical: 对着女儿，语气冷淡
+  - kind: dialogue
+    character: c8
+    line: 嗯，女儿知道了。
+    mode: extracted
+    parenthetical: 乖巧地低声应
+  - kind: action
+    text: 仙女扶着刘婶径自离开。转身时，庞雨看到她靠右耳根的脸颊上有一块黑色的胎记。
+  - kind: action
+    text: 庞雨捂着还有点发痛的耳朵，看着两人远去的背影。
+  - kind: dialogue
+    character: c1
+    line: 他娘的，长这么漂亮的女人一点不懂温柔，三从四德都学哪去了……不过真漂亮啊。
+    mode: extracted
+    parenthetical: 嘟囔
+  - kind: transition
+    text: 淡出。
+  quality_flags: []
+- id: s19
+  index: 19
+  heading:
+    int_ext: INT
+    location: 庞家卧室
+    time: 清晨
+  summary: 庞雨睡醒掂量怀里五两银子，盘算挣钱把仙女娶回来。
+  source:
+    chapter: 5
+    span:
+    - 44
+    - 47
+  conflict: 银两不足以娶妻，庞雨急需找到在古代挣钱的门路。
+  characters:
+  - c1
+  elements:
+  - kind: action
+    text: 清晨，庞家卧房内。庞雨从床上坐起，自然醒来的他精神不错，头伤也不痛了。
+  - kind: action
+    text: 他从枕边摸出一截留着的五两银子，白花花的银块摊在掌心翻看。
+  - kind: dialogue
+    character: c1
+    line: 想不到这傻子还有这么漂亮个媳妇，赶都赶不走，就是脾气不太好……要不要退了银子换个美女老婆回来。
+    mode: extracted
+    parenthetical: 掂着银子，嘟囔着
+  - kind: action
+    text: 庞雨盯着银子愣了半晌，眉头渐渐拧紧。
+  - kind: dialogue
+    character: c1
+    line: 五两银子也不够啊，得赶紧找法子挣钱，把这美女再娶回来……
+    mode: extracted
+    parenthetical: 自言自语
+  - kind: action
+    text: 他烦躁地摇头，脑子一片空白。
+  - kind: dialogue
+    character: c1
+    line: 想啥法子呢，这古代的东西啥也不会啊。
+    mode: extracted
+    parenthetical: 叹气
+  - kind: action
+    text: 庞雨摇摇头，把仙女的事暂时甩开，将几块小银仔细揣进怀里，拍了拍胸口，这才满意地起身走向天井。
+  - kind: transition
+    text: 切至 天井
+  quality_flags: []
+- id: s20
+  index: 20
+  heading:
+    int_ext: INT
+    location: 庞家天井与堂屋
+    time: 清晨
+  summary: 老妈告知焦国柞来访打听伤情，庞雨得知可借打官司挣钱，决定前往衙门。
+  source:
+    chapter: 5
+    span:
+    - 48
+    - 55
+  conflict: 老爹劝他对外乡人周家手下留情，庞雨一心想从官司中赚银子，与父亲意见相左。
+  characters:
+  - c1
+  - 庞雨老妈
+  - c3
+  elements:
+  - kind: action
+    text: 庞家天井，清晨。庞雨老妈坐在小凳上捣药，钵中药材发出有节奏的声响。
+  - kind: action
+    text: 庞雨从堂屋出来，伸了个懒腰，神色仍带几分伤后未愈的倦怠。
+  - kind: dialogue
+    character: 庞雨老妈
+    line: |-
+      早间开门的时候，焦国柞来门前问你伤情有否平复，说是跟周家打官司的事情，周家掌柜还关在牢子里。你若是能走动，就告知他一声，他好办妥放告的事。
+    mode: extracted
+    parenthetical: 停下捣药，抬头望向庞雨
+  - kind: action
+    text: 庞雨一听，眼神陡然一亮，抬手重重一拍身旁的木柱。
+  - kind: dialogue
+    character: c1
+    line: 我说要怎么赚银子，官司就是钱啊！打死那周家的，敢追得我满街跑——我这就去衙门！
+    mode: extracted
+    parenthetical: 兴奋
+  - kind: action
+    text: 庞雨老妈连忙起身，伸手拦住他。
+  - kind: dialogue
+    character: 庞雨老妈
+    line: 哎呀不急，把早饭吃了走。
+    mode: extracted
+    parenthetical: 嗔怪
+  - kind: action
+    text: 庞雨老爹的声音从堂屋深处传来。
+  - kind: dialogue
+    character: c3
+    line: |-
+      前几日也觉着那周家委实可恨，但如今为父心中估摸，你突然能识字了，没准那一棍子打走了魔障，许是因祸得福。听说又是外乡人，不要太过为难人家了。
+    mode: extracted
+    parenthetical: 语重心长
+  - kind: action
+    text: 庞雨不等话音落下，跑到桌边端起稀饭，两口喝尽，抹了抹嘴。
+  - kind: dialogue
+    character: c1
+    line: 知道了！
+    mode: expanded
+    parenthetical: 敷衍地应着，已迈步往外走
+  quality_flags: []
+- id: s21
+  index: 21
+  heading:
+    int_ext: EXT
+    location: 桐城县城西至城北·县前街八字墙前
+    time: 日
+  summary: 庞雨带家仆庞丁从城西药铺出发，途经弯曲的东西大街，抵达县衙外县前街，扫视八字墙告示闲聊。
+  source:
+    chapter: 6
+    span:
+    - 0
+    - 13
+  conflict: 庞雨刚有钱意气风发，与往日「庞二傻」形象的反差；墙上旧告示剥落、围观笼中人与青皮闲汉，营造出县衙门口的复杂氛围。
+  characters:
+  - c1
+  - c2
+  elements:
+  - kind: action
+    text: 【桐城县城西·安平药材铺门口·日】♂标。庞雨带着家仆庞丁自铺门走出，朝城北方向迈步。
+  - kind: action
+    text: 【东西大街·日】街道并不平直，而是朝北弯曲如拱桥。两人一路走走看看，庞雨昂首挺胸，步子带风。
+  - kind: action
+    text: |-
+      【县衙外·县前街·日】两人抵达县前街。衙门前人来人往，制服与百姓混行。八字墙周围三三两两站着几个青皮模样的人。墙根一字摆开三四个木笼，里头各关一人，围观的百姓低声议论。
+  - kind: action
+    text: |-
+      【八字墙近景】左右各一堵八字墙，墙头刻「所食所用，民脂民膏」八个大字。墙面贴满告示——科举喜报、官方通知、朝廷公文——纸色泛黄，墨迹被雨水侵染，边角剥落，无人打理。
+  - kind: action
+    text: 【庞雨走近八字墙·特写】庞雨随意扫过一张张旧告示，目光停在一张字迹尚清的会试喜报上，伸手指点，低声念出。
+  - kind: dialogue
+    character: c1
+    line: 「南直隶安庆府桐城光时亨中会试三甲，赐同进士出身。光时亨这名字可够怪的，居然还有人姓光。」
+    mode: extracted
+    parenthetical: 边看边念
+  - kind: action
+    text: 庞丁闻言凑近，满脸意外地盯着少爷。
+  - kind: dialogue
+    character: c2
+    line: 「少爷你真能认这么多字？我还以为少爷装样子的。」
+    mode: expanded
+    parenthetical: 惊讶地看着少爷
+  - kind: dialogue
+    character: c1
+    line: 「少爷岂止会认字，有什么老子不懂。」
+    mode: extracted
+    parenthetical: 不屑道
+  - kind: action
+    text: 庞雨整了整衣襟，抬脚正要跨进衙门大门——身后突然一声招呼。
+  - kind: dialogue
+    character: 来客
+    line: 「二弟你怎地出来了？」
+    mode: extracted
+    parenthetical: 身后
+  - kind: transition
+    text: 切至衙门内。
+  quality_flags: []
+- id: s22
+  index: 22
+  heading:
+    int_ext: EXT
+    location: 县衙正门外八字墙旁
+    time: 日
+  summary: 庞雨与结拜兄弟焦国柞、何仙崖在县衙门口会合，三人密谋借保辜期敲诈周家掌柜，索取五六十两甚至百两汤药费。
+  source:
+    chapter: 6
+    span:
+    - 14
+    - 44
+  conflict: |-
+    三人合谋利用保辜期把「可重可轻」的伤情坐实为笃疾，以此要挟周掌柜出高价赎人，暴露旧庞雨「傻愣」、二人在帮闲地位与权钱算计间的张力。
+  characters:
+  - c1
+  - c2
+  - c9
+  - c10
+  elements:
+  - kind: action
+    text: 衙役和青衿从后追来，庞雨转头看见，笑着拱手要行礼。
+  - kind: dialogue
+    character: c9
+    line: 你怎地出来了，你在家住得越久，我们兄弟才好收拾那周家掌柜的。
+    mode: extracted
+    parenthetical: 拉住庞雨，低声
+  - kind: action
+    text: 焦国柞凑近，一把拉住庞雨的袖子，压低声音。
+  - kind: dialogue
+    character: c1
+    line: 屋里待得实在无趣，不信你自己试试。
+    mode: extracted
+    parenthetical: 无奈
+  - kind: dialogue
+    character: c9
+    line: |-
+      以你性子，倒也确实，出来也无妨。那周掌柜还在狱中，保辜时间不过，绝不放他出来。今日你既然过来了，咱们先找他过过申明亭，汤药费一定要往多了算。
+    mode: extracted
+    parenthetical: 笑
+  - kind: dialogue
+    character: c1
+    line: 自然要算。至少让他出个……不少银子。
+    mode: extracted
+    parenthetical: 点头
+  - kind: action
+    text: 庞雨欲言又止，含混过去。
+  - kind: dialogue
+    character: c10
+    line: |-
+      放告这事二哥听我的。他周家掌柜现在保辜期内，只是在南监待审，这保辜期内呢，你伤情就可重可轻了。他要敢嘴硬，你立马找地方躺着，必须咬定头伤成了笃疾。
+    mode: extracted
+    parenthetical: 凑近，压低声音
+  - kind: dialogue
+    character: c1
+    line: 为何？
+    mode: expanded
+    parenthetical: 疑惑
+  - kind: dialogue
+    character: c10
+    line: |-
+      二哥当这些年皂隶都白当的么？笃疾和皮肉伤可差得远了，皮肉伤赔你十两银子也算多的。若是他与你纠缠，你就咬定当场内损吐血，而且是笃疾。二哥可记住了？
+    mode: extracted
+    parenthetical: 有些不耐烦
+  - kind: dialogue
+    character: c1
+    line: 既然要打这官司，咱们就一定要赢。这事就请二位兄弟拿主意，要我咋做就咋做。
+    mode: extracted
+    parenthetical: 恍然，点头
+  - kind: dialogue
+    character: c10
+    line: |-
+      二位哥哥听我说。这几日我已打听明白，那周家原籍陕西，来此不过两年多，平日性子暴躁，街坊寻常不敢惹他。听说有亲戚在凤阳府也做纸张营生，看铺里存货，还有他租的门市大小，我估摸着敲个五六十两应该能够，多者说或许百十两。
+    mode: extracted
+    parenthetical: 松一口气
+  - kind: dialogue
+    character: c1
+    line: 也不多嘛。
+    mode: expanded
+    parenthetical: 叹气
+  - kind: dialogue
+    character: c10
+    line: 这就不少了。二哥你这意思……把他家闺女也卖了？
+    mode: extracted
+    parenthetical: 惊讶
+  - kind: dialogue
+    character: c1
+    line: |-
+      闺女卖了也成，看价格多少……哎！你别怂恿我干坏事，我告诉你，老子这辈子可不干坏事了。再者说，闺女才值几个钱，老子以前都是做大生意的，哪看得上一个两个女人的买卖。
+    mode: extracted
+    parenthetical: 沉思
+  - kind: dialogue
+    character: c9
+    line: 还是咱二弟狠，百两都收不住。哼哼，他一个客居桐城的，竟然敢打咱二弟，看这次不让他龟孙脱层皮。走，再去牢里给他加把火。
+    mode: extracted
+    parenthetical: 狠狠一笑
+  - kind: action
+    text: 三人相视，阴阴一笑，朝县衙方向走去。
+  quality_flags: []
+- id: s23
+  index: 23
+  heading:
+    int_ext: INT
+    location: 县衙甬道至南监（牢房）门口
+    time: 日
+  summary: 庞雨与焦国柞穿过破旧县衙甬道、绕开皂隶房进入南监，遇见周家闺女跪在牢门前求情送饭。
+  source:
+    chapter: 6
+    span:
+    - 45
+    - 54
+  conflict: |-
+    庞雨作为「受害者」刚要与兄弟去牢房「加火」施压，撞见周家闺女低声下气送饭，立场对立骤然具体化；牢头与野牢子的阴森氛围也压在他心头。
+  characters:
+  - c1
+  - c9
+  - 牢子
+  - 帮闲数人
+  - c6
+  elements:
+  - kind: action
+    text: 庞雨把庞丁留在县衙门外，跟焦国柞一前一后进了县衙。
+  - kind: action
+    text: 破旧的大门。牌匾漆皮剥落，明代不修衙，果然名不虚传。
+  - kind: transition
+    text: 切至甬道
+  - kind: action
+    text: 甬道。右侧快手房，左侧皂隶房，青石板铺地。衙役夫役来来往往，衣着随便，神情猥琐，与庞雨擦肩而过，有人白眼一翻便走开。
+  - kind: action
+    text: 焦国柞在仪门前引庞雨左拐，避开皂隶房，绕过承发官，往西南角南监而去。
+  - kind: action
+    text: 拐角后，南监高大的青砖院墙迎面而立，阴冷气息扑来。牢门上书「监牢」二字，门楣刻着狴犴头像。
+  - kind: action
+    text: 南监门口。小哨房前一牢子，六七个帮闲，或蹲或坐，歪眉斜目，笑意森森。
+  - kind: action
+    text: 牢门正中。一黄衣女子跪着，红色裙摆铺展一地，身侧放着一只竹篮，正仰头向牢子求情。
+  - kind: action
+    text: 庞雨远远驻足，听见女子的声音，认出她来。
+  - kind: dialogue
+    character: c6
+    line: 求几位官爷行行好，我只是给爹送点吃的。
+    mode: extracted
+    parenthetical: 膝行上前，仰面哀求
+  - kind: dialogue
+    character: c1
+    line: 周家闺女。
+    mode: expanded
+    parenthetical: 低声，朝焦国柞方向偏头
+  quality_flags: []
+- id: s24
+  index: 24
+  heading:
+    int_ext: EXT
+    location: 县衙牢门外
+    time: 日
+  summary: 周闺女送饭被牢子勒索，庞雨旁观插嘴后焦国柞出面塞银子进门
+  source:
+    chapter: 7
+    span:
+    - 0
+    - 36
+  conflict: 周闺女探监被勒索一两银子一顿，庞雨冷语讥讽又拒带饭，焦国柞以银子开路带庞雨进牢
+  characters:
+  - c1
+  - 周闺女
+  - 牢子
+  - c14
+  - 帮闲
+  - c9
+  elements:
+  - kind: action
+    text: 县衙牢门外,日光下。庞雨心头一紧——听口音是周家闺女,可进了衙门,百姓怕官,她那女汉子的气势已荡然无存。
+  - kind: action
+    text: 牢子阴阴地笑,挡在门口。
+  - kind: dialogue
+    character: 牢子
+    line: 送吃的,谁知道你送些什么,万一放些砒霜毒药吃死了人,我等职责在身,可担不起这天大的责。
+    mode: extracted
+    parenthetical: 阴笑
+  - kind: dialogue
+    character: 周闺女
+    line: 我给爹送东西,怎会放砒霜。那我当你们面吃一半,死也是先死小女子!
+    mode: extracted
+    parenthetical: 抬头,大声
+  - kind: action
+    text: 一小牢子往嘴里投了颗干胡豆,嘎嘣嘎嘣嚼着,蹲低身子凑到周闺女跟前。
+  - kind: dialogue
+    character: c14
+    line: |-
+      我说周小娘子,你真不懂假不懂——你吃死了是你的事,牢里有牢里的规矩。私下放你进去,我们得担多大的干系,到时各位大人怪罪下来,可都是差爷担着。
+    mode: expanded
+    parenthetical: 嚼着胡豆,漫不经心
+  - kind: action
+    text: 周闺女突然放声大哭,边哭边嚷。
+  - kind: dialogue
+    character: 周闺女
+    line: |-
+      我爹又没打死人,你们凭啥关他!连看都不准看……呜……我都听说了,你们牢子里面都是吃些发霉发臭的东西……呜……我爹都那么老了……
+    mode: extracted
+    parenthetical: 放声大哭
+  - kind: action
+    text: 庞雨听到周闺女大哭,心头没来由的一阵痛快,嘴角微微一勾。
+  - kind: dialogue
+    character: 牢子
+    line: 要哭滚外边哭去,老爷我腻歪听这个。
+    mode: extracted
+    parenthetical: 不耐烦,挥挥手
+  - kind: action
+    text: 野牢子又凑过来,摇头晃脑开导。
+  - kind: dialogue
+    character: c14
+    line: |-
+      你爹持他物伤人,人证物证具在,苦主还是咱县衙的皂隶,你说你们干的这事,难不成你还有理了?保辜期不过,苦主不撤状子,必定是走不了的。不过若是只送饭嘛——刚跟你说了,规矩是不准的,外边的吃食一律不准进牢子。不过看在你一片孝心也是不易,我这里有个另外的法子,也能让你爹吃好了。
+    mode: extracted
+    parenthetical: 一脸好心
+  - kind: action
+    text: 周闺女把头移开一些,抹着泪,转过来问。
+  - kind: dialogue
+    character: 周闺女
+    line: 啥……啥法子?
+    mode: expanded
+    parenthetical: 抹泪,低声
+  - kind: dialogue
+    character: c14
+    line: 牢外的东西不准进,但牢里有啊。你给银子,由在下帮他在里面找些好吃好喝的,一准不会比你做的差了。
+    mode: extracted
+    parenthetical: 一摆头,斜眼盯着
+  - kind: dialogue
+    character: 周闺女
+    line: 多、多少银子?
+    mode: extracted
+    parenthetical: 声音发颤
+  - kind: action
+    text: 帮闲伸出一根指头,在她面前晃了晃。
+  - kind: dialogue
+    character: 帮闲
+    line: 一顿饭,一两。
+    mode: extracted
+    parenthetical: 伸出一指
+  - kind: dialogue
+    character: 周闺女
+    line: 啊!一个人怎么可能一顿饭就吃一两银子,那一日不就是二三两,谁吃得起!
+    mode: extracted
+    parenthetical: 惊呼
+  - kind: dialogue
+    character: 帮闲
+    line: 那没法子了。你可知牢里的东西,那不是随便进的,都是银针探毒、精挑细选的,还得给你做好味道——一两可不贵。
+    mode: extracted
+    parenthetical: 摇头晃脑
+  - kind: action
+    text: 帮闲斜着眼观察周闺女的表情,口中继续施压。
+  - kind: dialogue
+    character: 帮闲
+    line: 为人子女的,孝心难道还比不过这一两银子?要是某啊,只要拿得出来的,可不会你这般还嫌贵——你孝心都到哪里去了。
+    mode: extracted
+    parenthetical: 斜眼,阴阳怪气
+  - kind: action
+    text: 周闺女跪在地上,呼呼喘着气,似乎在做着激烈的思想斗争。
+  - kind: action
+    text: 庞雨在旁边冷眼旁观,不知一两银子到底算多少钱,但总觉得这个数字听上去便宜,忍不住插嘴。
+  - kind: dialogue
+    character: c1
+    line: 你这闺女就光是打打杀杀厉害,脑袋是水泥做的么?谁叫你一天吃三顿——给你爹一天吃一顿改善一下,不就成了?
+    mode: extracted
+    parenthetical: 插嘴,一脸嫌弃
+  - kind: action
+    text: 周闺女转过头——她脸上红扑扑的,挂着几滴泪水,虽说姿色还在,但看着颇为憔悴。认出是庞雨,脸上露出既愤怒又有点难堪的表情。
+  - kind: dialogue
+    character: 帮闲
+    line: 他妈的说了几天了!你真当银子买食货的?不懂事就滚远些!
+    mode: extracted
+    parenthetical: 破口大骂
+  - kind: action
+    text: 帮闲走过去一脚将地上的竹篮踢出几步远。哐啷啷一阵响,竹篮里的碗筷碰撞着翻出,两个碗破了,饭菜倒了满地。
+  - kind: action
+    text: 周闺女吓得尖叫一声,看着满地散落的饭菜,往后连退了几步。
+  - kind: action
+    text: 牢门前几人正僵持间,远处传来一声「哈」——
+  - kind: action
+    text: 众人转头,焦国柞大摇大摆走来。牢子们挤出点笑迎上去。牢子对庞雨咧嘴,口气不善。
+  - kind: dialogue
+    character: 牢子
+    line: 庞二傻,挨一棒子还认得我不?
+    mode: extracted
+    parenthetical: 咧嘴,带刺
+  - kind: action
+    text: 庞雨笑笑不说话,心中记了此人一笔。
+  - kind: action
+    text: 焦国柞伸手从怀里摸出一块碎银子,塞进牢子手里,接着朝庞雨打了个眼色,示意一起进牢里去。
+  - kind: action
+    text: 庞雨连忙跟上。周闺女在身后迟疑了一下,终于开口。
+  - kind: dialogue
+    character: 周闺女
+    line: 庞、庞家的,能不能帮奴家带些饭菜进去……
+    mode: extracted
+    parenthetical: 低声下气
+  - kind: dialogue
+    character: c1
+    line: 不行。
+    mode: expanded
+    parenthetical: 果断,头也不回
+  - kind: action
+    text: 庞雨低声补了句。
+  - kind: dialogue
+    character: c1
+    line: 你这脑子真不好用,当着牢子的面都敢让我夹带——找死啊。
+    mode: expanded
+    parenthetical: 压低声音,嫌弃
+  - kind: dialogue
+    character: 周闺女
+    line: 求求你,我爹都饿好多天了……
+    mode: extracted
+    parenthetical: 哀求
+  - kind: dialogue
+    character: c1
+    line: |-
+      那又关本少爷什么事?你不看少爷我多惨——没手机没电脑没汽车没飞机。哼,懒得跟你说,反正你也不懂。你爹把少爷我弄成这样,有因才有果,活该他饿着。
+    mode: expanded
+    parenthetical: 哼了一声,没回头
+  - kind: action
+    text: 周闺女再也控制不住,突然放声大哭。
+  - kind: dialogue
+    character: 周闺女
+    line: 都是你害的……呜……
+    mode: extracted
+    parenthetical: 崩溃大哭
+  - kind: action
+    text: 庞雨看到她大哭,心头又一阵开心,连忙拍拍脑袋,赶紧跟着焦国柞往牢里走。心中暗骂:挨了一棒咋有这爱好了?我他妈是变态了?
+  - kind: transition
+    text: '切至: 牢内'
+  quality_flags: []
+- id: s25
+  index: 25
+  heading:
+    int_ext: INT
+    location: 县衙外牢夹道
+    time: 连续
+  summary: 庞雨随焦国柞穿过五道门进入外牢夹道，见识麻绳天网与敲诈勒索的牢房格局
+  source:
+    chapter: 7
+    span:
+    - 37
+    - 47
+  conflict: 犯人哀求换房被焦国柞踢开，牢中贫富两重天，靠银子分房已成明规则
+  characters:
+  - c1
+  - c9
+  - 外牢犯人
+  elements:
+  - kind: action
+    text: |-
+      内景　县衙外牢夹道——连续。
+      监牢大门在牢子身后推开，露出一道照壁。左边已用砖封死，右侧仅留窄口，一条无窗砖墙甬道延伸向前。
+  - kind: action
+    text: |-
+      庞雨、焦国柞随牢子穿过第一道门。昏黄油灯在壁龛里摇晃。牢子横身挡住去路，焦国柞递过一锭碎银，门栓响动，放行。两人右拐，又过一道门，仍由同一牢子开启。
+  - kind: action
+    text: 直角弯道接连出现，砖墙夹出四折五门的甬道。庞雨数着门扇。最后一道门推开，头顶豁然明亮——外牢夹道到了。
+  - kind: action
+    text: 仰拍：夹道上方，一张麻绳编结的天网兜在屋檐与屋檐之间，网眼粗大，绳结紧绷。没有利器，犯人断它不开。
+  - kind: action
+    text: 横移镜头扫过夹道两侧：木栅栏门一间挨一间，门内昏暗，外牢犯人或蹲或躺，夹道无顶，日光斜斜地落在栅栏上。
+  - kind: action
+    text: 近景：左前方一间牢房。栅栏后，一名外牢犯人猛地扑到木栏前，五指从栅缝里伸出来，抓向两人衣襟。
+  - kind: dialogue
+    character: 外牢犯人
+    line: 差爷，我交银子，求你给我换一间，能躺就成。
+    mode: extracted
+    parenthetical: 急切，从栅栏后伸手乱抓
+  - kind: action
+    text: |-
+      焦国柞眉头一皱，抬脚把那只伸出来的手踢开，继续往前走。庞雨跟着，目光扫过后面几间栅栏——里面各自只关一人，角落甚至有一间空着。
+  - kind: action
+    text: |-
+      庞雨不动声色，但眼神在那些单间与空房之间来回一掠，心里已然明白了七八分：给过银子的犯人，牢子就给单间；没给的，便被塞进那五六人挤一间的木栅栏里，蚊叮虫咬，连躺都没法躺。
+  quality_flags: []
+- id: s26
+  index: 26
+  heading:
+    int_ext: INT
+    location: 县衙内牢周掌柜监房
+    time: 夜
+  summary: 庞雨与焦国柞在内牢见到匣床酷刑后的周掌柜，三人逼问撤状条件
+  source:
+    chapter: 7
+    span:
+    - 48
+    - 94
+  conflict: 周掌柜在匣床中受一夜折磨后，庞雨与焦国柞逼其撤状赔银、出申明亭和解
+  characters:
+  - c1
+  - c9
+  - c12
+  - c5
+  elements:
+  - kind: action
+    text: 内牢。瓦缝透下微弱天光。潮湿阴冷，恶臭扑鼻，蚊蝇嗡飞。焦国柞领庞雨穿过夹道，在一间监房前停步。
+  - kind: dialogue
+    character: c9
+    line: 昨日我过来，给了当值的牢子好处，昨晚那周掌柜吃了大苦头。
+    mode: extracted
+    parenthetical: 低声，指着牢门
+  - kind: action
+    text: 二人进牢。庞雨渐适应黑暗，见屋中一个柜子模样的木架，上头躺着个人。庞雨心生疑惑，未开口。
+  - kind: action
+    text: 那人撑起上身，斗笠下面纱撩起，认出庞雨，嘿嘿发笑。
+  - kind: dialogue
+    character: c12
+    line: 庞二傻你这就好了，咱兄弟听说这周家汉子敢打咱公门的人，那就没说的，轮流着给他上好家伙，这匣床我可压了一晚。
+    mode: extracted
+    parenthetical: 嘿嘿地
+  - kind: dialogue
+    character: c1
+    line: 兄弟辛苦，这一晚受累，就是这周老头别压出个好歹。
+    mode: extracted
+    parenthetical: 摸出一小块银子递上
+  - kind: dialogue
+    character: c12
+    line: 哪能，我躺上面干啥的，就是听着动静，不过也差不离了，放出来你们跟他聊聊，包你要他干啥，他就得干啥。
+    mode: extracted
+    parenthetical: 黑暗中一摆手
+  - kind: dialogue
+    character: c9
+    line: 老罗你点个火，老子不像你们天天跟这里呆着，他妈啥都看不清。
+    mode: extracted
+  - kind: action
+    text: 老罗钻到一边，悉悉索索弄了一会，啪啪打燃火绒，点起一盏豆大的油灯。昏暗牢房中忽有光亮。
+  - kind: action
+    text: 匣床内传来痛苦的低沉呻吟。老罗与焦国柞各站一头，抬开匣床盖板。庞雨凑近——盖板下密布三寸铁钉，油灯下拉出无数纤细黑影。
+  - kind: action
+    text: 匣床中窜出两个黑影，庞雨惊退。老罗哈哈大笑。
+  - kind: dialogue
+    character: c12
+    line: 莫事莫事，加的点料。
+    mode: extracted
+    parenthetical: 笑道
+  - kind: action
+    text: |-
+      两黑影乱窜逃出门外，原是两只老鼠。庞雨壮胆再往匣床内看：周掌柜头被揪头环箍住，颈上是夹项锁，双手双环铁杻，大腿铁索捆缚，脚踝锁于匣栏孔中，盖板三寸铁钉正对脸部，不过三四厘米。
+  - kind: action
+    text: 周掌柜在匣床中发出带哭腔的呻吟，啊啊说不出话。
+  - kind: dialogue
+    character: c12
+    line: 姓周的，昨晚老子给你加的老鼠跳蚤可还舒服。
+    mode: extracted
+    parenthetical: 对周掌柜冷笑
+  - kind: action
+    text: |-
+      老罗逐一解开周掌柜锁链。周掌柜僵得无法动弹，老罗一把揪住他头发，生生把上身扯起。庞雨、焦国柞上前帮手，三人将周掌柜抬出匣床，撂在地上。
+  - kind: action
+    text: 周掌柜全身筛糠般抖动。借油灯细看——已瘦一圈，头发纠结条条垂在脸上，满脸疙瘩，全无当日威风。
+  - kind: action
+    text: 焦国柞一个耳光打过去。周掌柜一激灵，想抬手臂护脸，却僵硬抬不起，又吓得哼哼。
+  - kind: dialogue
+    character: c9
+    line: 现在知道怕了，你知道你当日打的是谁？是我家兄弟！
+    mode: extracted
+    parenthetical: 冷笑
+  - kind: dialogue
+    character: c5
+    line: 我哪知道啊，知道是差爷我决计是不敢打的。求差爷饶命啊！
+    mode: extracted
+    parenthetical: 哼哼着开口
+  - kind: action
+    text: 焦国柞随手拍死手臂上一只吸血蚊子，缓缓开口。
+  - kind: dialogue
+    character: c9
+    line: 现在求饶命就晚了，我兄弟被你们打的，今日才起得床，头上开口入了风，日后必定留下个笃疾。
+    mode: extracted
+  - kind: action
+    text: 庞雨在旁听了，咳嗽一声。
+  - kind: dialogue
+    character: c1
+    line: |-
+      周掌柜的，别以为你吃了多大苦，你知不知道你那一棒子，我差点就没命了，咱家可是几代单传，就你一棍子就要断人家香火，你说你是不是活该。
+    mode: extracted
+    parenthetical: 咳嗽一声
+  - kind: dialogue
+    character: c5
+    line: 该啊该啊，对不住差爷啊！
+    mode: extracted
+  - kind: dialogue
+    character: c1
+    line: |-
+      好了，这个认错的态度是端正的。你关在牢里是因为你干了该关牢里的事儿。咱损失比你大，一是命差点没了，二是暂时把命保住，日后有没有痼疾还说不准，受的苦比你大天上去了。这苦得咋补，你得拿东西来跟咱交易。现在咱们来解决问题——先问你一句，还想不想继续住这牢房？
+    mode: extracted
+  - kind: dialogue
+    character: c5
+    line: 不住！万万不住了！各位官爷，我赔银子，你们说多少！只求你们早点放小人……不不，今日就放小人出去。
+    mode: extracted
+    parenthetical: 急叫
+  - kind: action
+    text: 焦国柞与庞雨对视一眼。
+  - kind: dialogue
+    character: c9
+    line: 总算你比你闺女懂事些。实话告诉你，状子上去了，承发房排号放告之前，是出不去的。想要现在就出去，就一个法子。
+    mode: extracted
+  - kind: action
+    text: 周掌柜抓住救命稻草，僵直的手臂也仿佛活了过来，死死攥住庞雨裤脚。
+  - kind: dialogue
+    character: c5
+    line: 差爷你说啥法子。
+    mode: extracted
+  - kind: dialogue
+    character: c9
+    line: 去申明亭，里老当中见人，银子给了咱撤状子，你就能回家。
+    mode: extracted
+  - kind: dialogue
+    character: c5
+    line: 回！回家！
+    mode: expanded
+    parenthetical: 嚎叫
+  - kind: action
+    text: 嚎叫声在黑狱中回荡。
+  - kind: transition
+    text: 切至
+  quality_flags: []
+- id: s27
+  index: 27
+  heading:
+    int_ext: EXT
+    location: 桐城县衙大门外
+    time: 日
+  summary: 庞雨与周掌柜的纠纷被带至申明亭调解，众人落座准备开审
+  source:
+    chapter: 8
+    span:
+    - 0
+    - 11
+  conflict: 申明亭作为士绅调解机制的设置背景，与县衙利益冲突导致废弛；庞雨重伤装病入场，周掌柜落魄被提审，双方对垒正式开
+  characters:
+  - c1
+  - c5
+  - c6
+  - c9
+  - c10
+  - 牢子
+  - 皂隶
+  - 里老吴老
+  elements:
+  - kind: action
+    text: 县衙大门外，左侧砖瓦房——申明亭，右侧为旌善亭。亭内上首悬黑漆善恶簿，木板空白。
+  - kind: action
+    text: 两名皂隶自刑房方向走来，与门口牢子会合，将周掌柜从牢中提出，押送至申明亭。周掌柜耷拉着脑袋，步履拖沓。
+  - kind: action
+    text: 周月如一见父亲落魄模样，急忙迎上前，扶住周掌柜臂膀，一脸心疼。
+  - kind: action
+    text: 庞雨由焦国柞搀扶着慢慢走进来，面如金纸、气息奄奄，一副重伤未愈的样子。何仙崖跟在身后，神色从容。
+  - kind: action
+    text: 牢子瞥见庞雨，凑近嘲弄两句。庞雨抬眼，只淡淡一笑，并不接话。
+  - kind: action
+    text: 里老吴老已在亭中正位落座，备好茶盏，等候开审。众人依长幼依次入座。
+  - kind: action
+    text: 庞雨落座后目光微扫：亭内逼仄，上首黑漆善恶簿高悬，木板上尚无今日调解记录。
+  - kind: dialogue
+    character: 牢子
+    line: 庞公子，今儿可算能坐一坐了，昨儿那股子威风哪儿去啦？
+    mode: expanded
+    parenthetical: 凑近庞雨，压低声音嘲弄
+  - kind: dialogue
+    character: c1
+    line: （轻轻一笑，移开目光）
+    mode: expanded
+    parenthetical: 抬眼，淡淡一笑，并不接话茬
+  - kind: action
+    text: 焦国柞扶庞雨在亭中下首落座，自己退至一旁。何仙崖在庞雨身后站定，双手负后，神色泰然。
+  - kind: action
+    text: 周月如扶着周掌柜在另一侧坐下，周掌柜始终耷拉着脑袋，不敢抬眼看人。
+  - kind: dialogue
+    character: 里老吴老
+    line: 人齐了，今日之讼，便由老朽居中调解。先把两边情由说来，再议曲直。
+    mode: expanded
+    parenthetical: 轻咳一声，环视众人
+  quality_flags: []
+- id: s28
+  index: 28
+  heading:
+    int_ext: INT
+    location: 桐城县衙申明亭内
+    time: 日
+  summary: 里老吴老主持调解，庞雨与周月如围绕「调戏」指控各执一词
+  source:
+    chapter: 8
+    span:
+    - 12
+    - 27
+  conflict: 周月如指控庞雨摸她屁股要求先断调戏，庞雨以「无证据无证人」反驳并嚣张要求「补摸一次」自证男儿身，场面僵持
+  characters:
+  - c1
+  - c5
+  - c6
+  - 里老吴老
+  - c10
+  elements:
+  - kind: action
+    text: |-
+      申明亭内。日光从瓦缝漏下。花白胡须的里老吴老端坐上首，左右两侧分坐庞雨与周掌柜，周月如立于周掌柜身后，庞雨佯装重伤歪在椅上哼哼唧唧。
+  - kind: dialogue
+    character: c10
+    line: 二位都来了，老夫忝为清风市里老，蒙父母大人高看，今日为二位调解周拥田持他物打伤庞雨一事，请二位都说一说当日情形。
+    mode: extracted
+  - kind: action
+    text: 周掌柜耷拉着脑袋，垂手不语。周月如站在父亲身后，隔着空当向庞雨怒目而视。庞雨半倚椅背，哼哼唧唧地装出重伤模样。
+  - kind: dialogue
+    character: c6
+    line: 当日是这庞家皂隶调戏我在先，我爹是出来阻止他的，要断案子也得先断他调戏奴家。
+    mode: extracted
+  - kind: action
+    text: 庞雨抬眼，朝周月如冷哼一声，眉头一挑。
+  - kind: dialogue
+    character: c1
+    line: 没礼貌，什么调戏调戏的，调戏你哪里了！
+    mode: extracted
+  - kind: dialogue
+    character: c6
+    line: 你摸我屁股！
+    mode: extracted
+  - kind: action
+    text: 周月如话一出口，亭内几人憋不住嘿嘿笑出声。她脸涨得通红，胸口起伏。
+  - kind: dialogue
+    character: c1
+    line: 你有证据没，有证人没，你再胡说我告你诬陷。
+    mode: extracted
+  - kind: action
+    text: 庞雨忘了装病，下意识抬起头，周月如被噎得一时语塞，半晌咬牙瞪他。
+  - kind: dialogue
+    character: c6
+    line: 呸，敢做不敢当，你也算男儿！
+    mode: extracted
+  - kind: dialogue
+    character: c1
+    line: 本来就不是我摸的，要不然你让本少爷补摸一次，让你看看少爷我是男人不。
+    mode: extracted
+  - kind: dialogue
+    character: c6
+    line: 你还要不要脸！
+    mode: extracted
+  - kind: action
+    text: 周月如抬手指向庞雨，手指微颤。里老吴老连忙伸手虚按，示意两边息声。
+  - kind: dialogue
+    character: c10
+    line: 两位有话好说，还不知这位姑娘是……
+    mode: extracted
+  - kind: dialogue
+    character: c6
+    line: 我是我爹的女儿，叫周月如。
+    mode: extracted
+  - kind: dialogue
+    character: c10
+    line: 今日既是在申明亭，便是和解之意，周家姑娘不可气势汹汹。
+    mode: extracted
+  quality_flags: []
+- id: s29
+  index: 29
+  heading:
+    int_ext: INT
+    location: 桐城县衙申明亭内
+    time: 日
+  summary: 何仙崖代庞雨陈情「驱鼠被诬」并引《问刑条例》施压，焦国柞威逼周掌柜当庭翻供认罪
+  source:
+    chapter: 8
+    span:
+    - 28
+    - 50
+  conflict: |-
+    讼棍何仙崖信口雌黄把庞雨包装成「驱鼠义士」、周家父女打成「剪道悍匪」；焦国柞当场威逼周掌柜认下「打人该赔」，周月如急呼「颠倒黑白」无力回天；最终以《问刑条例》「殴差人杖八十至笃疾绞」将周掌柜吓得连人带椅翻倒在地
+  characters:
+  - c1
+  - c5
+  - c6
+  - c9
+  - c10
+  - 里老吴老
+  elements:
+  - kind: action
+    text: 里老问话未落，何仙崖拱手作揖，彬彬有礼地插话进来，众人目光随之转向他。
+  - kind: dialogue
+    character: c10
+    line: 吴老在上，晚辈何仙崖，乃苦主庞雨友人，代他打理这讼状一事。蒙吴老下问。
+    mode: extracted
+    parenthetical: 拱手作揖，彬彬有礼
+  - kind: dialogue
+    character: c10
+    line: |-
+      当日实情是这样，庞雨奉皂班班头之命巡街查情，在东街周家纸铺外，见一鼠当街乱窜，令周女受惊，怕此女被老鼠撕咬，上前帮忙驱鼠，谁知这周掌柜狗咬吕洞宾，非要诬赖庞雨调戏其女，还声言要庞雨娶了他女子，否则就要赔他银子才能离开。庞雨身为皂隶，岂能纵容此等恶行，便要拿周拥田回衙见官，他父女二人便拿出棍棒殴打，以致头伤中风，又伤及内腑以致当场口鼻流血。此乃在场人等皆所共证，当日回家后呕血三升，至今不能痊愈。天日昭昭，此等行径，与剪道打劫之悍匪何异。
+    mode: extracted
+    parenthetical: 神色郑重
+  - kind: dialogue
+    character: c10
+    line: |-
+      晚辈今日查访，得知周拥田平日就脾气暴躁，仗着有些力气时常欺压邻里，终至犯下此等恶行。想我桐城上善之地，不能容这等奸人为恶。晚辈斗胆，请吴老为庞家作主，还我桐城朗朗乾坤。
+    mode: extracted
+    parenthetical: 义正辞严
+  - kind: action
+    text: 两声清脆的掌声响起，众人转头，只见庞雨正在拍手，目光中带着一丝玩味的赞许。
+  - kind: dialogue
+    character: c6
+    line: 你们真无耻！说他巡街查情，他皂隶服都不穿……
+    mode: extracted
+    parenthetical: 满脸通红，怒指何仙崖
+  - kind: action
+    text: 周月如气急之下作势向何仙崖扑过来。
+  - kind: dialogue
+    character: c10
+    line: 这位周姑娘，这里是县衙，桐城首善之地，当着吴老的面，难道你还敢行凶作恶？
+    mode: extracted
+    parenthetical: 满脸正气，抬头盯住周月如，大声道
+  - kind: action
+    text: 焦国柞一巴掌重重拍在耷拉着脑袋的周掌柜身上。
+  - kind: dialogue
+    character: c9
+    line: 装什么哑巴，是不是想回牢里去。
+    mode: extracted
+    parenthetical: 厉声威逼
+  - kind: action
+    text: 周掌柜一个哆嗦，慌忙抬头面向里老。
+  - kind: dialogue
+    character: c5
+    line: 就是他们说的那样，分毫不差……
+    mode: extracted
+    parenthetical: 哆嗦着，急切地
+  - kind: dialogue
+    character: c6
+    line: 爹，你怎么能这么说呢！
+    mode: extracted
+    parenthetical: 满脸惊讶，转头盯着老爹
+  - kind: dialogue
+    character: c5
+    line: 打了人该赔。
+    mode: extracted
+    parenthetical: 低着头，不敢看她
+  - kind: dialogue
+    character: c6
+    line: 爹，凡事总要有个是非吧，打人赔银子该赔，但不能颠倒黑白。他这个恶人是义士，我们还成了剪道小贼！
+    mode: extracted
+    parenthetical: 急得跺脚
+  - kind: dialogue
+    character: c5
+    line: 我自有主意，你，你又不知道那里面是何模样，你别说了。
+    mode: extracted
+    parenthetical: 压低声音，神色慌乱
+  - kind: action
+    text: 何仙崖将折扇呼地一收，往手中一拍，神态从容。
+  - kind: dialogue
+    character: c10
+    line: |-
+      吴老，各位公爷，你们都听到周拥田已承认小可所说当日之实情。在下先已说明，庞雨当日乃奉皂班班头之令巡街查情，此乃勾摄公事。按《问刑条例》，凡官司差人追征钱粮，勾摄公事，而抗拒不服，及殴所差人者，杖八十。若伤重，至内损吐血以上，及本犯重者，各加二等。罪止杖一百，流三千里。至笃疾者，绞！
+    mode: extracted
+    parenthetical: 环视众人，朗声道
+  - kind: action
+    text: 周掌柜如遭雷击，哐当一声连人带椅翻倒在地，面色煞白。
+  quality_flags: []
+- id: s30
+  index: 30
+  heading:
+    int_ext: INT
+    location: 申明亭
+    time: 日
+  summary: 焦国柞与何仙崖一硬一软配合，恐吓周掌柜认下敲诈、拒捕等重罪，里老见状以调解名义介入
+  source:
+    chapter: 9
+    span:
+    - 0
+    - 14
+  conflict: 皂隶与讼棍联手用死刑吓服被告，逼其在申明亭内私了，而非走县衙过堂
+  characters:
+  - c9
+  - c10
+  - c5
+  - c6
+  - c11
+  elements:
+  - kind: action
+    text: INT. 申明亭 - 日。何仙崖的恐吓余音未落，焦国柞抱臂立于一旁，冷冷盯视地上哭嚎的周掌柜。
+  - kind: dialogue
+    character: c10
+    line: 庞雨当场内损吐血,至今仍是难以痊愈,桐城三位大夫可为证,伤势已至笃疾,周拥田论刑当绞。
+    mode: extracted
+    parenthetical: 继续恐吓,引经据典
+  - kind: action
+    text: 周掌柜瘫在地上嚎哭,周月如红着眼蹲在他身旁。
+  - kind: dialogue
+    character: c6
+    line: 先就跟你说,你若认了敲诈,岂止是个伤人的赔法,他们都是吃人不吐骨的牲口。
+    mode: extracted
+    parenthetical: 红着眼,又气又急
+  - kind: action
+    text: 里老一直在角落里听,此刻咳嗽一声,慢步走到焦国柞与何仙崖身侧,以调解口吻开口。
+  - kind: dialogue
+    character: c11
+    line: 周家既是认了打人,庞哥儿你是苦主,若是周家赔银子,你可愿饶过这周拥田,了结讼告?
+    mode: extracted
+    parenthetical: 向庞雨一方发问
+  - kind: action
+    text: 庞雨装作一脸犹豫,语气虚弱,眼神却闪过一丝得意。
+  - kind: dialogue
+    character: c1
+    line: |-
+      在下品性纯善,能饶过自然会饶过,但此事罪大恶极,桐城满城皆知,以后万一周拥田再害人,别人要说我身为皂隶,不能仗义执法,以致遗祸人间,在下也是为难啊。
+    mode: extracted
+    parenthetical: 拿腔作势,示弱装善
+  - kind: action
+    text: 里老听罢,心中鄙夷,忍不住干咳一声,以调解人身份接过话头。
+  - kind: dialogue
+    character: c11
+    line: |-
+      周拥田得了这次教训,日后想来也不敢为恶了,届时若是了结,老朽可在善恶簿上写明,人人皆可见情由。如此百姓那边自然就体谅庞哥儿了,得饶人处且饶人,百姓还说一声庞哥儿大度。
+    mode: extracted
+    parenthetical: 干咳一声,顺势搭台阶
+  - kind: action
+    text: 庞雨气息微弱地点头,顺势做出让步姿态。
+  - kind: dialogue
+    character: c1
+    line: 我本就是一个好人,既然吴老如此说,便卖吴老一个情面。只是伤药所费不少,也是迫不得已,若是赔偿合理,便撤讼吧。
+    mode: extracted
+    parenthetical: 气息微弱,装作勉为其难
+  - kind: dialogue
+    character: c11
+    line: 那庞哥儿说个数。
+    mode: extracted
+    parenthetical: 朝庞雨伸手,示意他开价
+  quality_flags: []
+- id: s31
+  index: 31
+  heading:
+    int_ext: INT
+    location: 申明亭
+    time: 日
+  summary: 庞雨装作犹豫后勉强同意私了，何仙崖接手逐项罗列汤药、误工、后遗等赔偿条目，向周家漫天要价
+  source:
+    chapter: 9
+    span:
+    - 15
+    - 33
+  conflict: 强势一方演戏定调赔偿框架，借诉讼流程与伤情后患层层加码施压
+  characters:
+  - c1
+  - c10
+  - c9
+  - c5
+  - c6
+  - c11
+  elements:
+  - kind: action
+    text: 申明亭内。庞雨给何仙崖使了个眼色，何仙崖会意，收起折扇，起身向里老拱手，仍是一副彬彬有礼的模样。
+  - kind: dialogue
+    character: c10
+    line: |-
+      吴老，赔偿一事咱们分开来说。一是汤药费、照料费；二是误工费；三来嘛，庞哥儿伤到的是头，一时咋看无大碍，里面如何可说不清楚，大夫也打不得包票。万一日后伤情有个反复，还需有个依仗。
+    mode: extracted
+    parenthetical: 对里老，语气从容
+  - kind: action
+    text: 庞雨侧目欣赏地看着何仙崖，心中暗道此人相貌儒雅、做起坏事来却行云流水。”可他没有说出声。
+  - kind: action
+    text: 周月如偏过头，紧咬下唇，目光躲闪不看来人。
+  - kind: action
+    text: 何仙崖从袖中取出几张药方单据，恭敬地递给里老。
+  - kind: dialogue
+    character: c10
+    line: |-
+      此处有这些时日大夫所开药方，总共开了十副药，作价银二十一两。庞雨头伤甚重，最怕风入，还需服药调理，少说也要再吃三十副，汤药费是八十四两。前些日不能下床，请人照料，所用二两。先合计八十六两。
+    mode: extracted
+    parenthetical: 逐条念出
+  - kind: action
+    text: 周掌柜双手微微发颤，面色发白，却不敢抬头辩驳。
+  - kind: action
+    text: |-
+      周月如冷冷别过脸去——她知道这几人皆是公门中人，自己又不懂药方，他们就说一百两一副，自己一时也驳斥不了。她仍是没有看那药单。
+  - kind: dialogue
+    character: c10
+    line: 再说工食银。庞哥儿这已是在家数日，承发房那边自然要扣了他本月工食银，后面还扣多少尚难定论，暂且作价五两。
+    mode: extracted
+    parenthetical: 继续往下念
+  - kind: dialogue
+    character: c10
+    line: |-
+      最后来说日后依仗。庞哥儿尚在少年，挨你这一记闷棍，这些日子时有胡言乱语，左邻右舍、街坊里老无人不知。好些人都说庞哥儿是被——
+    mode: extracted
+    parenthetical: 话锋一转，语带沉痛
+  - kind: action
+    text: 何仙崖突然干咳一声，眼神飘向庞雨，话音顿住。
+  - kind: dialogue
+    character: c1
+    line: 他们都说我被打傻了。
+    mode: extracted
+    parenthetical: 抬头，神情毫不介意
+  - kind: action
+    text: 说完，庞雨又把头趴回桌面上。
+  - kind: dialogue
+    character: c6
+    line: 说得你以前好像不傻一样。
+    mode: extracted
+    parenthetical: 低眉，冷冷道
+  - kind: dialogue
+    character: c10
+    line: |-
+      脑子有些傻了。日后衙门里面当差，上官必定不能要庞哥儿；就算是家里铺子营生，也决计做不了。这一来数十年生计……哎，若是还要人照料，区区银子也不过是聊胜于无。好好一个人变得如此，真是想也不忍想。
+    mode: extracted
+    parenthetical: 不理会周月如，继续道
+  - kind: action
+    text: |-
+      焦国柞在一旁长长叹了一口气。何仙崖眼眶微红，硬生生挤出半滴泪来，以袖作势拭了拭眼角。里老看他情真意切，也跟着凑趣地叹了口气。
+  - kind: action
+    text: |-
+      周掌柜早已被几人在牢里折腾得服服帖帖，方才又认了敲诈未遂打人之事，此刻完全被何仙崖牵着鼻子走。他只想早些脱身，凑上前低声下气开口。
+  - kind: dialogue
+    character: c5
+    line: 这位相公，不须一项项罗列，你说个数，总共要多少？
+    mode: extracted
+    parenthetical: 低声下气，央求道
+  - kind: dialogue
+    character: c10
+    line: 二百五十两！
+    mode: extracted
+    parenthetical: 伸出一掌，干脆利落
+  - kind: action
+    text: 周掌柜与庞雨同时惊叫出声。周掌柜是骇然，庞雨则是——何仙崖回头不解地看他一眼。
+  - kind: transition
+    text: 定格。
+  quality_flags: []
+- id: s32
+  index: 32
+  heading:
+    int_ext: INT
+    location: 申明亭
+    time: 日
+  summary: 庞雨插话加码、调侃纳妾，气走周月如；周掌柜哀求降价，里老以过堂风险劝服周月如接受私了
+  source:
+    chapter: 9
+    span:
+    - 34
+    - 51
+  conflict: 赔偿数额远超周家承受力，私了赔银与过堂挨打受刑之间二选一的煎熬抉择
+  characters:
+  - c1
+  - c10
+  - c9
+  - c5
+  - c6
+  - c11
+  elements:
+  - kind: action
+    text: 庞雨举手摆摆，神态轻松。
+  - kind: dialogue
+    character: c1
+    line: 我大方点，减一两好了，二百四十九两。
+    mode: extracted
+  - kind: dialogue
+    character: c5
+    line: 你们杀了我也拿不出这么多银子来啊。
+    mode: extracted
+    parenthetical: 哭丧着脸
+  - kind: action
+    text: 庞雨瞥见周月如仍板着脸，眼珠一转，起了捉弄之心。
+  - kind: dialogue
+    character: c1
+    line: |-
+      周掌柜，二百多两都没跟你算完呢。告诉你实话，今日一早我那丈母娘上我家来着，说是我头伤入风，非要跟我家退婚，闹得邻里皆知，媳妇都闹没了，还没找你赔呢。要不你把女儿赔给我当小妾，给你减一百两。
+    mode: extracted
+    parenthetical: 对周掌柜，语气促狭
+  - kind: action
+    text: 焦国柞在一旁嘿嘿淫笑，一副看戏的模样。
+  - kind: dialogue
+    character: c6
+    line: 想得美你，杀了我也不会嫁你这种人。
+    mode: extracted
+    parenthetical: 呸一声，怒道
+  - kind: dialogue
+    character: c5
+    line: |-
+      庞差爷，我若是拿得出二百两银子，何苦还背井离乡来南直隶求活路。无论如何也拿不出来如此之多，只请庞哥儿高抬贵手，饶我们父女一些，给周家一条活路。
+    mode: extracted
+    parenthetical: 哭求
+  - kind: dialogue
+    character: c6
+    line: 爹，你不要求他……他们是漫天要价，咱们不跟他们谈了，就跟他过堂，找父母大人伸冤，女儿不信没有说理的地方。
+    mode: extracted
+    parenthetical: 一边拍着父亲肩膀，一边落泪
+  - kind: action
+    text: 焦国柞哈哈一笑，向手下衙役扬了扬下巴。
+  - kind: dialogue
+    character: c9
+    line: |-
+      那好得紧，兄弟几个，把人犯拿回牢里去，可得看好了他。告诉你们，辜知县高升他处，如今由宿松知县杨大人代理县事，讼状积压成堆，放告可也少得紧，就你这案子，或许两三月就出来了。
+    mode: extracted
+    parenthetical: 得意
+  - kind: action
+    text: 周掌柜扑通跪倒，死死扯住庞雨裤腿，任凭周月如拉扯也不肯起身，涕泪横流。
+  - kind: dialogue
+    character: c5
+    line: |-
+      庞差爷，求你不要送我回去，我愿给银子，但把我煎皮拆骨，也确实没二百两，就算把铺子里货卖完，也只能凑齐十两银，求你先饶过些。
+    mode: extracted
+    parenthetical: 哭求
+  - kind: action
+    text: 庞雨低头看着周掌柜，心里默默盘算。
+  - kind: dialogue
+    character: c1
+    line: 十两也在可接受范围内，比最开始估计的五六十还要多一些，反正伤势已无大碍。
+    mode: extracted
+    parenthetical: 自言自语
+  - kind: action
+    text: 一旁的里老走近周月如，捋着胡子低声开导。
+  - kind: dialogue
+    character: c11
+    line: |-
+      周家女子，方才这个公爷说的都是实情。承发房那边原本三六九放告，每次放两三个讼状过堂，但现时却是不知能放多少。杨大人代理桐城知县事，却本是宿松的知县正官，来了也是主理钱粮，怕是少有功夫听审过堂。前面已是排了不少，两三月都是往早了说的。是以此时能在申明亭了结，总是比等过堂划算。再者说，你爹打伤人头众人所见，上堂也必无赢了官司的道理，持他物伤人，届时不但赔银子，至少还要杖五十，板子下来若是气运不佳，落个人财两空也不是没有。老朽大半截入土的人，绝不跟你一个小女子打诳语。
+    mode: extracted
+    parenthetical: 对周月如，语重心长
+  - kind: action
+    text: 周月如听了神色愈加为难，低头沉思不语。
+  - kind: dialogue
+    character: c6
+    line: ……
+    mode: expanded
+    parenthetical: 低声
+  quality_flags: []
+story_graph:
+  nodes:
+  - id: c1
+    name: 庞雨
+    importance: 1.0
+    role: protagonist
+  - id: c7
+    name: 刘婶
+    importance: 0.25
+    role: supporting
+  - id: c5
+    name: 周掌柜
+    importance: 0.24
+    role: supporting
+  - id: c2
+    name: 庞丁
+    importance: 0.16
+    role: supporting
+  - id: c6
+    name: 周月如
+    importance: 0.16
+    role: supporting
+  - id: c9
+    name: 焦国柞
+    importance: 0.12
+    role: supporting
+  - id: c10
+    name: 何仙崖
+    importance: 0.12
+    role: supporting
+  - id: c11
+    name: 吴老
+    importance: 0.1
+    role: minor
+  - id: c20
+    name: 围观群众
+    importance: 0.08
+    role: group
+  - id: c3
+    name: 老庞头
+    importance: 0.07
+    role: supporting
+  - id: c4
+    name: 庞雨老娘
+    importance: 0.04
+    role: supporting
+  - id: c12
+    name: 老罗
+    importance: 0.04
+    role: minor
+  - id: c8
+    name: 刘家仙女
+    importance: 0.03
+    role: supporting
+  - id: c14
+    name: 野牢子
+    importance: 0.02
+    role: minor
+  - id: c18
+    name: 杨大人
+    importance: 0.02
+    role: minor
+  - id: c13
+    name: 南监牢子
+    importance: 0.01
+    role: minor
+  - id: c15
+    name: 庞家婆子
+    importance: 0.01
+    role: minor
+  - id: c16
+    name: 光时亨
+    importance: 0.01
+    role: minor
+  - id: c17
+    name: 辜知县
+    importance: 0.01
+    role: minor
+  - id: c19
+    name: 刘婶舅叔
+    importance: 0.01
+    role: minor
+  edges:
+  - from: c1
+    to: c2
+    type: 主仆
+    directed: false
+    weight: 1
+    note: 庞丁是庞家帮佣，跟随伺候庞雨，挨打受训但忠心。
+  - from: c1
+    to: c3
+    type: 亲属
+    directed: false
+    weight: 1
+    note: 父子，庞雨为庞家三代单传独子。
+  - from: c1
+    to: c4
+    type: 亲属
+    directed: false
+    weight: 1
+    note: 母子，老娘为庞雨婚事与刘婶大战。
+  - from: c1
+    to: c6
+    type: 冲突
+    directed: true
+    weight: 1
+    note: 庞雨穿越前身用死鼠调戏周月如，穿越后既退婚又设局讹诈其父。
+  - from: c5
+    to: c6
+    type: 亲属
+    directed: false
+    weight: 1
+    note: 父女，周月如为救父奔走县衙。
+  - from: c5
+    to: c1
+    type: 敌对
+    directed: true
+    weight: 1
+    note: 一棒将”旧庞雨”打死，因而入狱，遭庞雨一伙人讹诈。
+  - from: c1
+    to: c8
+    type: 退婚
+    directed: true
+    weight: 1
+    note: 庞雨主动偷走婚书卖给刘家解除婚约，却又心猿意马想再娶。
+  - from: c8
+    to: c1
+    type: 喜欢
+    directed: true
+    weight: 1
+    note: 河边揪耳朵逼庞雨不许退婚，认定他做相公。
+  - from: c7
+    to: c4
+    type: 冲突
+    directed: false
+    weight: 1
+    note: 因庞家遭灾上门退婚，两妇当街对骂。
+  - from: c7
+    to: c1
+    type: 敌对
+    directed: true
+    weight: 1
+    note: 嫌弃庞雨傻，付二十一两违约金强行退婚。
+  - from: c7
+    to: c19
+    type: 亲属
+    directed: false
+    weight: 1
+    note: 舅叔在安庆府当司吏，被刘婶抬出来压庞家。
+  - from: c7
+    to: c8
+    type: 亲属
+    directed: false
+    weight: 1
+    note: 母女，刘家仙女背地里逼庞雨别退婚。
+  - from: c9
+    to: c1
+    type: 同僚
+    directed: false
+    weight: 1
+    note: 结拜兄弟，焦为大哥、庞为二弟，同为县衙皂隶。
+  - from: c10
+    to: c1
+    type: 同僚
+    directed: false
+    weight: 1
+    note: 结拜兄弟，按地位排老三，充任庞雨的讼棍。
+  - from: c9
+    to: c10
+    type: 同僚
+    directed: false
+    weight: 1
+    note: 二人默契配合，一个牢中施压一个堂上引律。
+  - from: c2
+    to: c15
+    type: 同僚
+    directed: false
+    weight: 1
+    note: 同为庞家帮佣，一起上阵助老娘骂退刘婶。
+  - from: c11
+    to: c1
+    type: 调解
+    directed: true
+    weight: 1
+    note: 里老在申明亭替庞雨主持调解，偏向苦主一方。
+  - from: c11
+    to: c5
+    type: 调解
+    directed: true
+    weight: 1
+    note: 里老劝周家父女接受赔偿，警告过堂会落个人财两空。
+  - from: c12
+    to: c5
+    type: 敌对
+    directed: true
+    weight: 1
+    note: 用匣床加老鼠跳蚤折磨周掌柜一夜逼其服软。
+  - from: c12
+    to: c9
+    type: 同僚
+    directed: false
+    weight: 1
+    note: 牢中老关系，替皂隶兄弟”招待”犯人分点好处。
+  - from: c13
+    to: c1
+    type: 同僚
+    directed: false
+    weight: 1
+    note: 同为公门中人，嘲弄其为”庞二傻”，但收银子放行。
+  - from: c13
+    to: c6
+    type: 敌对
+    directed: true
+    weight: 1
+    note: 不许送饭、踢翻饭篮，逼周家掏一两银子一顿饭。
+  - from: c14
+    to: c6
+    type: 敌对
+    directed: true
+    weight: 1
+    note: 借送饭敲诈，开口一两银子一顿。
+  - from: c6
+    to: c5
+    type: 亲属
+    directed: false
+    weight: 1
+    note: 为救父亲跪求牢头，调解中边哭边护爹。
+  - from: c1
+    to: c20
+    type: 敌对
+    directed: true
+    weight: 1
+    note: 庞雨平日作恶多端，街坊厌之，看其挨打还喝彩。
+  - from: c20
+    to: c1
+    type: 敌对
+    directed: true
+    weight: 1
+    note: 街坊认定庞雨是喇唬青皮，乐见他被整治。
+  - from: c18
+    to: c17
+    type: 同僚
+    directed: false
+    weight: 1
+    note: 辜知县高升后由宿松知县杨大人代理桐城县事。
+quality_report:
+  scene_count: 32
+  character_count: 20
+  dialogue_lines: 313
+  extracted: 281
+  expanded: 32
+  dialogue_density: 0.527
+  expanded_ratio: 0.102
+  warnings: []
+  unresolved_speakers: 112
