@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block title %}{{ script.meta.title }} · 剧本{% endblock %}
+{% block content %}
+{% set qr = script.quality_report %}
+<div class="script-head">
+  <div>
+    <h1>{{ script.meta.title }}</h1>
+    <p class="muted">{{ script.meta.logline }}</p>
+    <p class="muted">模型 {{ script.meta.model }} · {{ script.meta.dialogue_mode }} 模式 ·
+      生成于 {{ script.meta.generated_at }} ·
+      {% if valid %}<span class="ok">✓ 结构校验通过</span>{% else %}<span class="warn">⚠ 校验有问题</span>{% endif %}
+    </p>
+  </div>
+  <a class="btn" href="{{ url_for('script_yaml', script_id=sid) }}">⬇ 下载 script.yaml</a>
+</div>
+
+<section class="metrics">
+  <div class="metric"><b>{{ qr.scene_count }}</b><span>场景</span></div>
+  <div class="metric"><b>{{ qr.character_count }}</b><span>角色</span></div>
+  <div class="metric"><b>{{ qr.dialogue_lines }}</b><span>台词</span></div>
+  <div class="metric"><b>{{ qr.dialogue_density }}</b><span>对白密度</span></div>
+  <div class="metric"><b>{{ qr.extracted }}</b><span>原文提取</span></div>
+  <div class="metric"><b>{{ qr.expanded }}</b><span>AI 扩写</span></div>
+</section>
+
+{% if qr.warnings %}
+<section class="quality-warnings">
+  <h3>质量提示</h3>
+  <ul>{% for w in qr.warnings %}<li class="warn">{{ w.type }} · {{ w.scene }}：{{ w.detail }}</li>{% endfor %}</ul>
+</section>
+{% endif %}
+
+<div class="two-col">
+  <section class="graph-pane">
+    <h2>人物关系图</h2>
+    <div id="story-graph" data-src="{{ url_for('script_graph', script_id=sid) }}"></div>
+    <p class="muted">圆点大小 = 重要度；连线为人物关系。点击节点高亮其关系。</p>
+  </section>
+
+  <section class="char-pane">
+    <h2>人物（{{ script.characters|length }}）</h2>
+    <ul class="char-list">
+      {% for c in script.characters %}
+      <li>
+        <span class="role role-{{ c.role }}">{{ c.role }}</span>
+        <b>{{ c.name }}</b>
+        <span class="muted">出场 {{ c.appearances }} · 重要度 {{ c.importance }}</span>
+        <div class="muted small">{{ c.profile }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+
+<section>
+  <h2>剧本</h2>
+  {% for block in chapters %}
+  <h3 class="chapter-h">第 {{ block.chapter }} 章</h3>
+  {% for scene in block.scenes %}
+  <article class="scene">
+    <div class="slug">{{ scene.heading.int_ext }}. {{ scene.heading.location }} — {{ scene.heading.time }}
+      <span class="muted small">（s{{ scene.index }} · 原文段 {{ scene.source.span[0] }}–{{ scene.source.span[1] }}）</span>
+    </div>
+    <p class="summary">{{ scene.summary }}{% if scene.conflict %} <span class="muted">· 冲突：{{ scene.conflict }}</span>{% endif %}</p>
+    <div class="elements">
+      {% for e in scene.elements %}
+        {% if e.kind == 'action' %}
+          <p class="action">{{ e.text }}</p>
+        {% elif e.kind == 'transition' %}
+          <p class="transition">{{ e.text }}</p>
+        {% elif e.kind == 'dialogue' %}
+          <p class="line">
+            <span class="speaker">{{ e.character }}</span>
+            {% if e.parenthetical %}<span class="paren">（{{ e.parenthetical }}）</span>{% endif %}
+            <span class="text">{{ e.line }}</span>
+            <span class="mode mode-{{ e.mode }}">{{ '原文' if e.mode == 'extracted' else 'AI扩写' }}</span>
+          </p>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </article>
+  {% endfor %}
+  {% endfor %}
+</section>
+{% endblock %}
+
+{% block footscript %}
+<script src="{{ url_for('static', filename='graph.js') }}"></script>
+{% endblock %}
