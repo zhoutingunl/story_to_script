@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "story2script"
+version = "0.1.0"
+description = "AI 小说转剧本工具 — 将 3 章以上小说自动转为结构化剧本(YAML)"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+include = ["story2script*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --cov=story2script --cov-report=term-missing"
+
+[tool.coverage.run]
+omit = ["story2script/app.py"]
