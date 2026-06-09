@@ -26,6 +26,19 @@ def test_parse_json_invalid_raises():
         AIService.parse_json("这里没有任何 JSON")
 
 
+def test_parse_json_repairs_inner_chinese_quotes():
+    """模型把中文引号写成 ASCII "" 夹在汉字间，应被修复后解析。"""
+    raw = '{"profile": "落入原主"傻子皂隶"躯壳的少年"}'
+    out = AIService.parse_json(raw)
+    assert "傻子皂隶" in out["profile"]
+
+
+def test_parse_json_inner_quote_repair_keeps_structure():
+    raw = '```json\n{"a": "他说"好"就走", "b": "正常值"}\n```'
+    out = AIService.parse_json(raw)
+    assert out["b"] == "正常值" and "好" in out["a"]
+
+
 def test_offline_backend_missing_fixture(tmp_path):
     cfg = Config(ai_backend="offline", fixtures_dir=tmp_path)
     svc = AIService(backend=OfflineBackend(cfg), cfg=cfg)

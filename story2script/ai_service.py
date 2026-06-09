@@ -176,6 +176,19 @@ class RecordingBackend(AIBackend):
 # --------------------------------------------------------------------------- #
 _FENCE = re.compile(r"```(?:json|yaml|ya?ml)?\s*(.*?)```", re.DOTALL)
 
+# CJK 文字 + 中文/全角标点 + 弯引号——用于识别"被当成中文引号的 ASCII 双引号"
+_CJK = r"[㐀-鿿　-〿！-｠‘-‟]"
+_INNER_QUOTE = re.compile(rf'(?<={_CJK})"(?={_CJK})')
+
+
+def _repair_inner_quotes(text: str) -> str:
+    """模型常把中文引号写成 ASCII ""，夹在汉字中间会破坏 JSON。
+
+    结构性引号总有 ASCII 定界符（: , {{ }} [ ] 空白）相邻；内容引号两侧都是
+    CJK 字符。据此把"被汉字包夹的 ASCII 双引号"替换成中文右引号，使 JSON 可解析。
+    """
+    return _INNER_QUOTE.sub("”", text)
+
 
 class AIService:
     """高层模块（人物/场景/对白/剧本）统一用它。
@@ -211,17 +224,24 @@ class AIService:
         m = _FENCE.search(text)
         if m:
             text = m.group(1).strip()
-        try:
-            return json.loads(text)
-        except json.JSONDecodeError:
-            pass
+
+        def _try(candidate: str):
+            for variant in (candidate, _repair_inner_quotes(candidate)):
+                try:
+                    return json.loads(variant)
+                except json.JSONDecodeError:
+                    continue
+            return None
+
+        result = _try(text)
+        if result is not None:
+            return result
         # 容错：截取第一个 { 或 [ 到对应的最后一个 } 或 ]
         for open_ch, close_ch in (("{", "}"), ("[", "]")):
             start = text.find(open_ch)
             end = text.rfind(close_ch)
             if start != -1 and end > start:
-                try:
-                    return json.loads(text[start:end + 1])
-                except json.JSONDecodeError:
-                    continue
+                result = _try(text[start:end + 1])
+                if result is not None:
+                    return result
         raise AIError(f"无法将模型输出解析为 JSON：{raw[:200]}...")
