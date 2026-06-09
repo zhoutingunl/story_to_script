@@ -213,9 +213,22 @@ class AIService:
     def chat(self, prompt: str, *, system: Optional[str] = None, task: str = "chat") -> str:
         return self.backend.chat(prompt, system=system, task=task)
 
-    def chat_json(self, prompt: str, *, system: Optional[str] = None, task: str = "chat"):
-        raw = self.chat(prompt, system=system, task=task)
-        return self.parse_json(raw)
+    def chat_json(self, prompt: str, *, system: Optional[str] = None,
+                  task: str = "chat", retries: int = 2):
+        """要求 JSON 输出。解析失败（如 Hermes 流被截断导致 JSON 不完整）时重试。
+
+        重试对 hermes/record 后端有意义（重开会话、可能拿到完整响应）；offline
+        回放同一 fixture 不会变好，故失败即抛。
+        """
+        last_err: Exception | None = None
+        attempts = 1 if isinstance(self.backend, OfflineBackend) else max(1, retries)
+        for _ in range(attempts):
+            raw = self.chat(prompt, system=system, task=task)
+            try:
+                return self.parse_json(raw)
+            except AIError as e:
+                last_err = e
+        raise last_err  # type: ignore[misc]
 
     @staticmethod
     def parse_json(raw: str):

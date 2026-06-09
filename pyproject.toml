@@ -16,4 +16,4 @@ testpaths = ["tests"]
 addopts = "-q --cov=story2script --cov-report=term-missing"
 
 [tool.coverage.run]
-omit = ["story2script/app.py"]
+omit = ["story2script/app.py", "story2script/tools/*"]

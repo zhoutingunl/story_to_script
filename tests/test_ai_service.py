@@ -63,6 +63,26 @@ def test_record_then_replay_roundtrip(tmp_path):
     assert replayed == out
 
 
+def test_chat_json_retries_on_truncated_json():
+    """首次返回被截断的 JSON，重试后拿到完整 JSON。"""
+    class Flaky:
+        def __init__(self):
+            self.n = 0
+        def chat(self, prompt, *, system=None, task="chat"):
+            self.n += 1
+            return '{"elements": [{"kind":"action"' if self.n == 1 else '{"ok": true}'
+    svc = AIService(backend=Flaky())
+    assert svc.chat_json("x", task="t") == {"ok": True}
+
+
+def test_chat_json_raises_after_retries_exhausted():
+    class AlwaysBad:
+        def chat(self, prompt, *, system=None, task="chat"):
+            return "not json at all"
+    with pytest.raises(AIError):
+        AIService(backend=AlwaysBad()).chat_json("x", retries=2)
+
+
 def test_make_backend_selection(tmp_path):
     assert type(AIService(cfg=Config(ai_backend="offline", fixtures_dir=tmp_path)).backend).__name__ == "OfflineBackend"
     assert type(AIService(cfg=Config(ai_backend="hermes")).backend).__name__ == "HermesBackend"
